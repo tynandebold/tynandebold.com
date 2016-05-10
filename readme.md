@@ -6,5 +6,5 @@ $ npm install
 
 ### Run
 ```
-$ gulp
+$ npm start
 ```
