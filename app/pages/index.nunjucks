@@ -1,0 +1,30 @@
+{% extends "layout.nunjucks" %}
+
+{% block content %}
+
+  {% import 'macros/nav-macro.nunjucks' as nav %}
+  <!-- Creating the navigation with activePage = 'dev' -->
+  {{nav.active('dev')}}
+
+  <div class="dev-gallery">
+    <!-- Loops through "images" array -->
+    {% for dev_item in dev_items %}
+    <div class="gallery-item">
+      <div class="gallery-img-wrapper">
+        <img src="{{dev_item.src}}" alt="{{dev_item.title}}">
+      </div>
+      <div class="proj-title desc-item">
+        <a class="proj-link" href="{{dev_item.link}}" target="_blank">{{dev_item.title}}</a>
+      </div>
+      <div class="proj-tech desc-item">Tech: {{dev_item.technologies}}</div>
+      {% if dev_item.award1 %}
+        <div class="proj-awards desc-item">Awards:
+          <a href="{{dev_item.award1}}" target="_blank">GEN</a> &
+          <a href="{{dev_item.award2}}" target="_blank">IIB</a>
+        </div>
+      {% endif %}
+    </div>
+    {% endfor %}
+  </div>
+
+{% endblock %}

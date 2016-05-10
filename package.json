@@ -1,0 +1,19 @@
+{
+  "name": "tynandebold.com",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "del": "^2.2.0",
+    "gulp-compass": "^2.1.0",
+    "gulp-data": "^1.2.1",
+    "gulp-livereload": "^3.8.1",
+    "gulp-nunjucks-render": "^2.0.0",
+    "gulp-webserver": "^0.9.1"
+  }
+}

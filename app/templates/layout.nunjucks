@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>{{meta.title}}</title>
+  <link rel="shortcut icon" type="image/x-icon" href="assets/favicon.ico">
+
+  <meta name="description" content="{{meta.long_desc}}">
+	<meta name="keywords" content="{{meta.keywords}}">
+
+  <link href='https://fonts.googleapis.com/css?family=Source+Code+Pro:400,300,600' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+
+  <div class="title-wrapper">
+    <h1>{{meta.title}}</h1>
+    <h3>{{meta.short_desc}}</h3>
+  </div>
+
+  {% block content %} {% endblock %}
+
+  <footer>
+    <p>–</p>
+    <p>© Tynan DeBold 2016</p>
+  </footer>
+
+  <!-- <script src="js/main.js"></script> -->
+</body>
+</html>

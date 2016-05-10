@@ -1,0 +1,89 @@
+{
+  "meta": {
+    "title": "Tynan DeBold",
+    "short_desc": "Front-End Developer/Photographer",
+    "long_desc": "Award-winning multimedia and graphics editor with extensive experience in newsroom settings. Hands-on conceptualization, management and execution of editorial content.",
+    "keywords": "tynan debold, tynandebold, tynan, developer, interactive developer, data visualization, photography, photographer, the wall street journal, wsj, msnbc, msnbc.com"
+  },
+  "dev_items": [
+    {
+      "src": "assets/dev/refugees.jpg",
+      "title": "The Global Migrant Crisis",
+      "technologies": "ES6, Gulp, Highcharts, lazysizes, lodash, ScrollMagic",
+      "link": "http://www.msnbc.com/specials/migrant-crisis/jordan"
+    },
+    {
+      "src": "assets/dev/vaccines.jpg",
+      "title": "The Impact of Vaccines",
+      "technologies": "Excel, Handlebars, Highcharts",
+      "link": "http://graphics.wsj.com/infectious-diseases-and-vaccines/",
+      "award1": "http://community.globaleditorsnetwork.org/content/battling-infectious-diseases-20th-century-impact-vaccines-0",
+      "award2": "http://www.informationisbeautifulawards.com/showcase/660-vaccines-and-infectious-diseases"
+    },
+    {
+      "src": "assets/dev/india.jpg",
+      "title": "India's Great Parcel Race",
+      "technologies": "Handlebars, Waypoints",
+      "link": "http://graphics.wsj.com/indias-great-parcel-race/"
+    },
+    {
+      "src": "assets/dev/1mdb.jpg",
+      "title": "1MDB Decoded",
+      "technologies": "Compass, Handlebars, lodash",
+      "link": "http://graphics.wsj.com/1mdb-decoded/"
+    },
+    {
+      "src": "assets/dev/mi-charts.jpg",
+      "title": "Markets/Finance Year in Charts",
+      "technologies": "Custom Font, Excel, Handlebars, Highcharts, Moment",
+      "link": "http://graphics.wsj.com/markets-and-finance-year-in-charts/"
+    },
+    {
+      "src": "assets/dev/yuan.jpg",
+      "title": "Why China Devalued the Yuan",
+      "technologies": "Excel, Handlebars, Highcharts, Moment",
+      "link": "http://graphics.wsj.com/china-devalues-the-yuan/"
+    },{
+      "src": "assets/dev/carousel.jpg",
+      "title": "Newsroom Tool: Embeddable Carousel",
+      "technologies": "Handlebars, jQuery UI, PHP",
+      "link": "http://graphics.wsj.com/embeddable-carousel/?slug=joko-widodo-in-office"
+    },
+    {
+      "src": "assets/dev/chart1.jpg",
+      "title": "China's Copper Trading",
+      "technologies": "Excel, Illustrator",
+      "link": "http://si.wsj.net/public/resources/images/OJ-AB298A_CCOPP_11U_20151018121511.jpg"
+    },
+    {
+      "src": "assets/dev/chart2.jpg",
+      "title": "Li Ka-shing Selling Assets",
+      "technologies": "Excel, Illustrator",
+      "link": "http://si.wsj.net/public/resources/images/AM-BK674_HKTYCO_16U_20150906111213.jpg"
+    }
+  ],
+  "photo_groups": {
+    "people": {
+      "title": "people",
+      "photos": [
+        {
+          "src": "assets/photo/DSC_4715.jpg",
+          "caption": "kyoto, japan"
+        },
+        {
+          "src": "assets/photo/DSC_6512.jpg",
+          "caption": "los angeles, california"
+        }
+      ]
+    },
+    "places": {
+      "title": "places",
+      "photos": [
+        {
+          "src": "assets/photo/DSC_6414.jpg",
+          "caption": "los angeles, california"
+        }
+      ]
+    }
+  }
+}

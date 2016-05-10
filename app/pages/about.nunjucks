@@ -1,0 +1,23 @@
+{% extends "layout.nunjucks" %}
+
+{% block content %}
+
+  {% import 'macros/nav-macro.nunjucks' as nav %}
+  {{nav.active('about')}}
+
+  <p class="about-txt">
+    I'm an award-winning multimedia and graphics editor with extensive experience in newsroom settings. Hands-on conceptualization, management and execution of editorial content. I've done more than what exists on this site, too. Find some of that on my
+    <a href="http://tynandebold.tumblr.com" target="_blank">tumblr</a>
+    or
+    <a href="https://github.com/tynandebold" target="_blank">github</a>
+    or
+    <a href="http://soundcloud.com/tynandebold" target="_blank">soundcloud</a>
+    or
+    <a href="http://twitter.com/tynandebold" target="_blank">twitter</a>,
+    or
+    <a href="mailto:thdebold@gmail.com?subject=Hola, Tynan.">email me</a> if you'd like to.
+    </br></br>
+    /// Tynan
+  </p>
+
+{% endblock %}
