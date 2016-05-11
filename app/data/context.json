@@ -85,5 +85,107 @@
         }
       ]
     }
+  },
+  "series_groups": {
+    "alleys": {
+      "title": "tin pan alley",
+      "desc": "Areas overlooked, illuminated.",
+      "photos": [
+        {
+          "src": "assets/photo/series/alley/alley-0.jpg",
+          "caption": "1"
+        },
+        {
+          "src": "assets/photo/series/alley/alley-1.jpg",
+          "caption": "2"
+        },
+        {
+          "src": "assets/photo/series/alley/alley-2.jpg",
+          "caption": "3"
+        },
+        {
+          "src": "assets/photo/series/alley/alley-3.jpg",
+          "caption": "4"
+        },
+        {
+          "src": "assets/photo/series/alley/alley-4.jpg",
+          "caption": "5"
+        },
+        {
+          "src": "assets/photo/series/alley/alley-5.jpg",
+          "caption": "6"
+        },
+        {
+          "src": "assets/photo/series/alley/alley-6.jpg",
+          "caption": "7"
+        },
+        {
+          "src": "assets/photo/series/alley/alley-7.jpg",
+          "caption": "8"
+        },
+        {
+          "src": "assets/photo/series/alley/alley-8.jpg",
+          "caption": "9"
+        },
+        {
+          "src": "assets/photo/series/alley/alley-9.jpg",
+          "caption": "10"
+        },
+        {
+          "src": "assets/photo/series/alley/alley-10.jpg",
+          "caption": "11"
+        }
+      ]
+    },
+    "doors": {
+      "title": "portals",
+      "desc": "My grandmother had a framed poster with photographs of selected doors from Keene, New Hampshire, hanging on her wall. These are the selected doors from my life.",
+      "photos": [
+        {
+          "src": "assets/photo/series/door/door-0.jpg",
+          "caption": "1"
+        },
+        {
+          "src": "assets/photo/series/door/door-1.jpg",
+          "caption": "2"
+        },
+        {
+          "src": "assets/photo/series/door/door-2.jpg",
+          "caption": "3"
+        },
+        {
+          "src": "assets/photo/series/door/door-3.jpg",
+          "caption": "4"
+        },
+        {
+          "src": "assets/photo/series/door/door-4.jpg",
+          "caption": "5"
+        },
+        {
+          "src": "assets/photo/series/door/door-5.jpg",
+          "caption": "6"
+        },
+        {
+          "src": "assets/photo/series/door/door-6.jpg",
+          "caption": "7"
+        },
+        {
+          "src": "assets/photo/series/door/door-7.jpg",
+          "caption": "8"
+        },
+        {
+          "src": "assets/photo/series/door/door-8.jpg",
+          "caption": "9"
+        },
+        {
+          "src": "assets/photo/series/door/door-9.jpg",
+          "caption": "10"
+        },
+        {
+          "src": "assets/photo/series/door/door-10.jpg",
+          "caption": "11"
+        }
+      ]
+    }
   }
 }
