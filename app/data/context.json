@@ -46,7 +46,7 @@
     },{
       "src": "assets/dev/carousel.jpg",
       "title": "Newsroom Tool: Embeddable Carousel",
-      "technologies": "Handlebars, jQuery UI, PHP",
+      "technologies": "bxSlider, Handlebars, jQuery UI, PHP",
       "link": "http://graphics.wsj.com/embeddable-carousel/?slug=joko-widodo-in-office"
     },
     {
@@ -60,6 +60,24 @@
       "title": "Li Ka-shing Selling Assets",
       "technologies": "Excel, Illustrator",
       "link": "http://si.wsj.net/public/resources/images/AM-BK674_HKTYCO_16U_20150906111213.jpg"
+    },
+    {
+      "src": "assets/dev/singapore.gif",
+      "title": "Singapore's 50 Years of Independence",
+      "technologies": "Bootstrap, Handlebars, Highcharts, slick",
+      "link": "http://graphics.wsj.com/singapore-50th-anniversary/"
+    },
+    {
+      "src": "assets/dev/cali.jpg",
+      "title": "California's Challenge With Drought",
+      "technologies": "D3, Topojson",
+      "link": "http://graphics.wsj.com/californias-long-challenge-with-drought/"
+    },
+    {
+      "src": "assets/dev/obama-budget.jpg",
+      "title": "Obama’s 2016 Budget",
+      "technologies": "Bootstrap, Excel, Handlebars, Highcharts, lodash, Moment",
+      "link": "http://graphics.wsj.com/obamas-2016-budget-behind-the-numbers/"
     }
   ],
   "photo_groups": {
