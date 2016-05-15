@@ -4,8 +4,8 @@
   "description": "Tynan DeBold's website",
   "main": "index.js",
   "repository": {
-    "type" : "git",
-    "url" : "https://github.com/tynandebold/tynandebold.com"
+    "type": "git",
+    "url": "https://github.com/tynandebold/tynandebold.com"
   },
   "scripts": {
     "start": "gulp"
@@ -16,8 +16,10 @@
     "del": "^2.2.0",
     "gulp-compass": "^2.1.0",
     "gulp-data": "^1.2.1",
+    "gulp-imagemin": "^3.0.1",
     "gulp-livereload": "^3.8.1",
     "gulp-nunjucks-render": "^2.0.0",
+    "gulp-responsive": "^2.3.0",
     "gulp-webserver": "^0.9.1"
   }
 }
