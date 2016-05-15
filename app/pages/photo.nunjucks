@@ -9,6 +9,7 @@
       <!-- Loops through "images" array -->
       {% for group, content in photo_groups %}
       <h3 class="group-title">{{content.title}}</h3>
+      <h3 class="group-desc">{{content.desc}}</h3>
         {% for photo in content.photos %}
         <div class="gallery-item">
           <div class="gallery-img-wrapper">

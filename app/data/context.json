@@ -83,10 +83,11 @@
   "photo_groups": {
     "people": {
       "title": "people",
+      "desc": "A look at humans.",
       "photos": [
         {
-          "src": "assets/photo/DSC_4715.jpg",
-          "caption": "kyoto, japan"
+          "src": "assets/photo/DSC_6414.jpg",
+          "caption": "los angeles, california"
         },
         {
           "src": "assets/photo/DSC_6512.jpg",
@@ -96,10 +97,11 @@
     },
     "places": {
       "title": "places",
+      "desc": "A look at areas.",
       "photos": [
         {
-          "src": "assets/photo/DSC_6414.jpg",
-          "caption": "los angeles, california"
+          "src": "assets/photo/DSC_4715.jpg",
+          "caption": "kyoto, japan"
         }
       ]
     }

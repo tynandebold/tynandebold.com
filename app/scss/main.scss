@@ -2,15 +2,15 @@
 @import "compass/css3";
 
 @mixin breakpoint($point) {
-    @if $point == large {
-        @media (min-width: 992px) { @content; }
-    }
-    @else if $point == medium {
-        @media (max-width: 991px) { @content; }
-    }
-    @else if $point == small {
-        @media (max-width: 767px)  { @content; }
-    }
+  @if $point == large {
+      @media (min-width: 992px) { @content; }
+  }
+  @else if $point == medium {
+      @media (max-width: 991px) { @content; }
+  }
+  @else if $point == small {
+      @media (max-width: 767px)  { @content; }
+  }
 }
 
 body {
