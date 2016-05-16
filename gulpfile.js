@@ -8,12 +8,15 @@ var compass    = require('gulp-compass');
 var livereload = require('gulp-livereload');
 var webserver  = require('gulp-webserver');
 var del        = require('del');
+var runSeq     = require('run-sequence');
 var responsive = require('gulp-responsive');
 var imagemin   = require('gulp-imagemin');
 
 // specific tasks
 gulp.task('default', ['compass', 'nunjucks', 'watch', 'webserver']);
-gulp.task('build', ['nunjucks', 'responsive', 'move']);
+gulp.task('build', function(){
+  runSeq('nunjucks', 'responsive', 'move');
+});
 
 // get data; run nunjucks to compile static html files
 gulp.task('nunjucks', function(){
@@ -62,7 +65,7 @@ gulp.task('webserver', function(){
 
 // image optimization
 gulp.task('responsive', function() {
-  del('./build/**');
+  del('./build/**/*');
   return gulp.src('./app/assets/photo/**/*.jpg')
     .pipe(responsive({
       '**/*.jpg': [{
@@ -74,10 +77,8 @@ gulp.task('responsive', function() {
     .pipe(gulp.dest('./build/assets/photo'));
 });
 
-
 // move necessary files to build dir
 gulp.task('move', function(){
-  del('./build/**');
-  return gulp.src(['./app/assets/dev/**', './app/css/**', './app/*.html'], {base: 'app'})
+  return gulp.src(['./app/assets/dev/**/*', './app/css/**/*', './app/*.html'], {base: 'app'})
     .pipe(gulp.dest('./build'));
 });

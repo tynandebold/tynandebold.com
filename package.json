@@ -20,6 +20,7 @@
     "gulp-livereload": "^3.8.1",
     "gulp-nunjucks-render": "^2.0.0",
     "gulp-responsive": "^2.3.0",
-    "gulp-webserver": "^0.9.1"
+    "gulp-webserver": "^0.9.1",
+    "run-sequence": "^1.1.5"
   }
 }
