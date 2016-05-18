@@ -9,7 +9,6 @@ var livereload = require('gulp-livereload');
 var webserver  = require('gulp-webserver');
 var del        = require('del');
 var runSeq     = require('run-sequence');
-var responsive = require('gulp-responsive');
 var imagemin   = require('gulp-imagemin');
 
 // specific tasks
@@ -67,12 +66,6 @@ gulp.task('webserver', function(){
 gulp.task('responsive', function() {
   del('./build/**/*');
   return gulp.src('./app/assets/photo/**/*.jpg')
-    .pipe(responsive({
-      '**/*.jpg': [{
-        width:650,
-        quality: 65,
-      }]
-    }))
     .pipe(imagemin({progressive: true}))
     .pipe(gulp.dest('./build/assets/photo'));
 });

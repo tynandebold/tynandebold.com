@@ -162,48 +162,52 @@
       "desc": "My grandmother had a framed poster with photographs of selected doors from Keene, New Hampshire, hanging on her wall. These are the selected doors from my life.",
       "photos": [
         {
-          "src": "assets/photo/door/door-0.jpg",
+          "src": "assets/photo/door/door-1.jpg",
           "caption": "1"
         },
         {
-          "src": "assets/photo/door/door-1.jpg",
+          "src": "assets/photo/door/door-2.jpg",
           "caption": "2"
         },
         {
-          "src": "assets/photo/door/door-2.jpg",
+          "src": "assets/photo/door/door-3.jpg",
           "caption": "3"
         },
         {
-          "src": "assets/photo/door/door-3.jpg",
+          "src": "assets/photo/door/door-4.jpg",
           "caption": "4"
         },
         {
-          "src": "assets/photo/door/door-4.jpg",
+          "src": "assets/photo/door/door-5.jpg",
           "caption": "5"
         },
         {
-          "src": "assets/photo/door/door-5.jpg",
+          "src": "assets/photo/door/door-6.jpg",
           "caption": "6"
         },
         {
-          "src": "assets/photo/door/door-6.jpg",
+          "src": "assets/photo/door/door-7.jpg",
           "caption": "7"
         },
         {
-          "src": "assets/photo/door/door-7.jpg",
+          "src": "assets/photo/door/door-8.jpg",
           "caption": "8"
         },
         {
-          "src": "assets/photo/door/door-8.jpg",
+          "src": "assets/photo/door/door-9.jpg",
           "caption": "9"
         },
         {
-          "src": "assets/photo/door/door-9.jpg",
+          "src": "assets/photo/door/door-10.jpg",
           "caption": "10"
         },
         {
-          "src": "assets/photo/door/door-10.jpg",
+          "src": "assets/photo/door/door-11.jpg",
           "caption": "11"
+        },
+        {
+          "src": "assets/photo/door/door-12.jpg",
+          "caption": "12"
         }
       ]
     }
