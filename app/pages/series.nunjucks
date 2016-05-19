@@ -13,7 +13,7 @@
         {% for photo in content.photos %}
         <div class="gallery-item">
           <div class="gallery-img-wrapper">
-            <img src="{{photo.src}}" alt="{{photo.title}}">
+            <img src="{{photo.src}}" alt="{{photo.caption}}">
           </div>
           <div class="caption">{{photo.caption}}</div>
         </div>
