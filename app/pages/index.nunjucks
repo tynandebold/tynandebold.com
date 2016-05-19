@@ -3,11 +3,9 @@
 {% block content %}
 
   {% import 'macros/nav-macro.nunjucks' as nav %}
-  <!-- Creating the navigation with activePage = 'dev' -->
   {{nav.active('dev')}}
 
   <div class="dev-gallery">
-    <!-- Loops through "images" array -->
     {% for dev_item in dev_items %}
     <div class="gallery-item">
       <div class="gallery-img-wrapper">

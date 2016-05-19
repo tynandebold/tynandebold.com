@@ -6,7 +6,6 @@
   {{nav.active('series')}}
 
     <div class="photo-gallery">
-      <!-- Loops through "images" array -->
       {% for group, content in series_groups %}
       <h3 class="group-title">{{content.title}}</h3>
       <h3 class="group-desc">{{content.desc}}</h3>
