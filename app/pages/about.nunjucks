@@ -6,7 +6,9 @@
   {{nav.active('about')}}
 
   <p class="about-txt">
-    I'm an award-winning multimedia and graphics editor with extensive experience in newsroom settings. Hands-on conceptualization, management and execution of editorial content. I've done more than what exists on this site, too. Find some of that on my
+    I'm a Special Projects Front-End Developer for MSNBC.com. Before that, I worked at The Wall Street Journal, where I was a Multimedia Editor in Hong Kong and Graphics Editor in New York. At the Journal, I won a couple of awards for my work and was part of the team that was a finalist for the 2016 Pulitzer Prize in International Reporting.<br/><br/>
+    I have extensive experience in newsroom settings and am well versed in hands-on conceptualization, management and execution of editorial content.<br/><br/>
+    There's more than what exists on this site, too. Find some of that on my
     <a href="http://tynandebold.tumblr.com" target="_blank">tumblr</a>
     or
     <a href="https://github.com/tynandebold" target="_blank">github</a>
@@ -16,7 +18,7 @@
     <a href="http://twitter.com/tynandebold" target="_blank">twitter</a>,
     or
     <a href="mailto:thdebold@gmail.com?subject=Hola, Tynan.">email me</a> if you'd like to.
-    </br></br>
+    <br/><br/>
     /// Tynan
   </p>
 
