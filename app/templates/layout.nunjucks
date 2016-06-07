@@ -26,6 +26,10 @@
     <p>© Tynan DeBold 2016</p>
   </footer>
 
-  <!-- <script src="js/main.js"></script> -->
+  <script>
+    window.lazySizesConfig = window.lazySizesConfig || {};
+    window.lazySizesConfig.expand = 300;
+  </script>
+  <script src="js/lazysizes.min.js"></script>
 </body>
 </html>

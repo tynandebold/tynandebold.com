@@ -72,6 +72,7 @@ body {
 }
 .title-wrapper h3 {
   font-size: 17px;
+  line-height: 19px;
   font-weight: 300;
   display: inline-block;
 }
@@ -163,6 +164,14 @@ body {
 .photo-gallery .gallery-img-wrapper img {
   width: 100%;
   height: 100%;
+}
+.photo-gallery .gallery-img-wrapper .lazyload,
+.photo-gallery .gallery-img-wrapper .lazyloading {
+  opacity: 0;
+}
+.photo-gallery .gallery-img-wrapper .lazyloaded {
+  opacity: 1;
+  transition: opacity 500ms;
 }
 .photo-gallery .caption {
   text-align: center;
