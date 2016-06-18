@@ -107,6 +107,40 @@
     }
   },
   "series_groups": {
+    "on_deck": {
+      "title": "on deck",
+      "desc": "A small place of apprehension and preparation.",
+      "photos": [
+        {
+          "src": "assets/photo/on_deck/1.jpg",
+          "caption": "1"
+        },
+        {
+          "src": "assets/photo/on_deck/2.jpg",
+          "caption": "2"
+        },
+        {
+          "src": "assets/photo/on_deck/3.jpg",
+          "caption": "3"
+        },
+        {
+          "src": "assets/photo/on_deck/4.jpg",
+          "caption": "4"
+        },
+        {
+          "src": "assets/photo/on_deck/5.jpg",
+          "caption": "5"
+        },
+        {
+          "src": "assets/photo/on_deck/6.jpg",
+          "caption": "6"
+        },
+        {
+          "src": "assets/photo/on_deck/7.jpg",
+          "caption": "7"
+        }
+      ]
+    },
     "alleys": {
       "title": "tin pan alley",
       "desc": "Areas overlooked, illuminated.",
