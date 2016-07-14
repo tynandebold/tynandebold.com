@@ -72,6 +72,6 @@ gulp.task('responsive', function() {
 
 // move necessary files to build dir
 gulp.task('move', function(){
-  return gulp.src(['./app/assets/dev/**/*', './app/css/**/*', './app/*.html'], {base: 'app'})
+  return gulp.src(['./app/assets/dev/**/*', './app/css/**/*', './app/*.html', './app/js/*.js'], {base: 'app'})
     .pipe(gulp.dest('./build'));
 });
