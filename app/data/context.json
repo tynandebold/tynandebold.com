@@ -7,6 +7,12 @@
   },
   "dev_items": [
     {
+      "src": "assets/dev/asylum.jpg",
+      "title": "Mapping Asylum Claims in Europe",
+      "technologies": "D3, GDAL, TopoJSON",
+      "link": "https://tynandebold.github.io/european-asylum-map/"
+    },
+    {
       "src": "assets/dev/refugees.jpg",
       "title": "The Global Migrant Crisis",
       "technologies": "ES6, Gulp, Highcharts, lazysizes, lodash, ScrollMagic",
