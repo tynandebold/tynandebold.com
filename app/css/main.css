@@ -90,6 +90,7 @@ body {
   font-size: 14px;
   font-weight: 600;
   color: #0000EE;
+  margin-right: 2px;
 }
 .nav .active {
   color: #551A8B;
@@ -143,6 +144,11 @@ body {
 .photo-gallery {
   max-width: 650px;
 }
+@media (max-width: 991px) {
+  .photo-gallery {
+    max-width: 100%;
+  }
+}
 .photo-gallery .group-title {
   font-size: 17px;
   font-weight: 600;
@@ -155,11 +161,11 @@ body {
   margin-bottom: 17px;
 }
 .photo-gallery .gallery-item {
-  margin-bottom: 30px;
+  margin-bottom: 40px;
 }
 .photo-gallery .gallery-img-wrapper {
   line-height: 0;
-  margin-bottom: 3px;
+  margin-bottom: 5px;
 }
 .photo-gallery .gallery-img-wrapper img {
   width: 100%;
@@ -188,6 +194,9 @@ body {
   .about-txt {
     line-height: 20px;
   }
+}
+.about-txt a {
+  color: #0000EE;
 }
 
 /* footer styles */

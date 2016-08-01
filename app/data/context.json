@@ -92,12 +92,136 @@
       "desc": "A look at humans.",
       "photos": [
         {
-          "src": "assets/photo/people/DSC_6414.jpg",
+          "src": "assets/photo/people/1.jpg",
+          "caption": "new york, new york"
+        },
+        {
+          "src": "assets/photo/people/2.jpg",
+          "caption": "new york, new york"
+        },
+        {
+          "src": "assets/photo/people/3.jpg",
+          "caption": "hong kong"
+        },
+        {
+          "src": "assets/photo/people/4.jpg",
+          "caption": "new york, new york"
+        },
+        {
+          "src": "assets/photo/people/5.jpg",
+          "caption": "new york, new york"
+        },
+        {
+          "src": "assets/photo/people/6.jpg",
+          "caption": "hong kong"
+        },
+        {
+          "src": "assets/photo/people/7.jpg",
           "caption": "los angeles, california"
         },
         {
-          "src": "assets/photo/people/DSC_6512.jpg",
+          "src": "assets/photo/people/8.jpg",
           "caption": "los angeles, california"
+        },
+        {
+          "src": "assets/photo/people/9.jpg",
+          "caption": "los angeles, california"
+        },
+        {
+          "src": "assets/photo/people/10.jpg",
+          "caption": "los angeles, california"
+        },
+        {
+          "src": "assets/photo/people/11.jpg",
+          "caption": "hong kong"
+        },
+        {
+          "src": "assets/photo/people/12.jpg",
+          "caption": "meredith, new hampshire"
+        },
+        {
+          "src": "assets/photo/people/13.jpg",
+          "caption": "tokyo, japan"
+        },
+        {
+          "src": "assets/photo/people/14.jpg",
+          "caption": "madrid, spain"
+        },
+        {
+          "src": "assets/photo/people/15.jpg",
+          "caption": "tokyo, japan"
+        },
+        {
+          "src": "assets/photo/people/16.jpg",
+          "caption": "los angeles, california"
+        },
+        {
+          "src": "assets/photo/people/17.jpg",
+          "caption": "hong kong"
+        },
+        {
+          "src": "assets/photo/people/18.jpg",
+          "caption": "new york, new york"
+        },
+        {
+          "src": "assets/photo/people/19.jpg",
+          "caption": "new york, new york"
+        },
+        {
+          "src": "assets/photo/people/20.jpg",
+          "caption": "los angeles, california"
+        },
+        {
+          "src": "assets/photo/people/21.jpg",
+          "caption": "kyoto, japan"
+        },
+        {
+          "src": "assets/photo/people/22.jpg",
+          "caption": "new york, new york"
+        },
+        {
+          "src": "assets/photo/people/23.jpg",
+          "caption": "osaka, japan"
+        },
+        {
+          "src": "assets/photo/people/24.jpg",
+          "caption": "hong kong"
+        },
+        {
+          "src": "assets/photo/people/25.jpg",
+          "caption": "new york, new york"
+        },
+        {
+          "src": "assets/photo/people/26.jpg",
+          "caption": "hong kong"
+        },
+        {
+          "src": "assets/photo/people/27.jpg",
+          "caption": "tokyo, japan"
+        },
+        {
+          "src": "assets/photo/people/28.jpg",
+          "caption": "old fort, north carolina"
+        },
+        {
+          "src": "assets/photo/people/29.jpg",
+          "caption": "hong kong"
+        },
+        {
+          "src": "assets/photo/people/30.jpg",
+          "caption": "los angeles, california"
+        },
+        {
+          "src": "assets/photo/people/31.jpg",
+          "caption": "durham, new hampshire"
+        },
+        {
+          "src": "assets/photo/people/32.jpg",
+          "caption": "new york, new york"
+        },
+        {
+          "src": "assets/photo/people/33.jpg",
+          "caption": "tokyo, japan"
         }
       ]
     },
@@ -106,8 +230,158 @@
       "desc": "A look at areas.",
       "photos": [
         {
-          "src": "assets/photo/places/DSC_4715.jpg",
+          "src": "assets/photo/places/1.jpg",
+          "caption": "new york, new york"
+        },
+        {
+          "src": "assets/photo/places/2.jpg",
+          "caption": "monument valley, utah"
+        },
+        {
+          "src": "assets/photo/places/3.jpg",
+          "caption": "hong kong"
+        },
+        {
+          "src": "assets/photo/places/4.jpg",
+          "caption": "hong kong"
+        },
+        {
+          "src": "assets/photo/places/5.jpg",
+          "caption": "charlotte, north carolina"
+        },
+        {
+          "src": "assets/photo/places/6.jpg",
+          "caption": "meredith, new hampshire"
+        },
+        {
+          "src": "assets/photo/places/7.jpg",
+          "caption": "meredith, new hampshire"
+        },
+        {
+          "src": "assets/photo/places/8.jpg",
+          "caption": "meredith, new hampshire"
+        },
+        {
+          "src": "assets/photo/places/9.jpg",
           "caption": "kyoto, japan"
+        },
+        {
+          "src": "assets/photo/places/10.jpg",
+          "caption": "kyoto, japan"
+        },
+        {
+          "src": "assets/photo/places/11.jpg",
+          "caption": "hong kong"
+        },
+        {
+          "src": "assets/photo/places/12.jpg",
+          "caption": "wells, maine"
+        },
+        {
+          "src": "assets/photo/places/13.jpg",
+          "caption": "hong kong"
+        },
+        {
+          "src": "assets/photo/places/14.jpg",
+          "caption": "kyoto, japan"
+        },
+        {
+          "src": "assets/photo/places/15.jpg",
+          "caption": "hong kong"
+        },
+        {
+          "src": "assets/photo/places/16.jpg",
+          "caption": "kyoto, japan"
+        },
+        {
+          "src": "assets/photo/places/17.jpg",
+          "caption": "japan"
+        },
+        {
+          "src": "assets/photo/places/18.jpg",
+          "caption": "malibu, california"
+        },
+        {
+          "src": "assets/photo/places/19.jpg",
+          "caption": "hong kong"
+        },
+        {
+          "src": "assets/photo/places/20.jpg",
+          "caption": "new york, new york"
+        },
+        {
+          "src": "assets/photo/places/21.jpg",
+          "caption": "barnstable, massachusetts"
+        },
+        {
+          "src": "assets/photo/places/22.jpg",
+          "caption": "new york, new york"
+        },
+        {
+          "src": "assets/photo/places/23.jpg",
+          "caption": "new york, new york"
+        },
+        {
+          "src": "assets/photo/places/24.jpg",
+          "caption": "new york, new york"
+        }
+      ]
+    },
+    "in_between": {
+      "title": "in between",
+      "desc": "Neither them or there.",
+      "photos": [
+        {
+          "src": "assets/photo/in_between/1.jpg",
+          "caption": "asheville, north carolina"
+        },
+        {
+          "src": "assets/photo/in_between/2.jpg",
+          "caption": "devner, colorado"
+        },
+        {
+          "src": "assets/photo/in_between/3.jpg",
+          "caption": "kyoto, japan"
+        },
+        {
+          "src": "assets/photo/in_between/4.jpg",
+          "caption": "denver, colorado"
+        },
+        {
+          "src": "assets/photo/in_between/5.jpg",
+          "caption": "new york, new york"
+        },
+        {
+          "src": "assets/photo/in_between/6.jpg",
+          "caption": "los angeles, california"
+        },
+        {
+          "src": "assets/photo/in_between/7.jpg",
+          "caption": "chichester, new hampshire"
+        },
+        {
+          "src": "assets/photo/in_between/8.jpg",
+          "caption": "ito, japan"
+        },
+        {
+          "src": "assets/photo/in_between/9.jpg",
+          "caption": "hong kong"
+        },
+        {
+          "src": "assets/photo/in_between/10.jpg",
+          "caption": "new york, new york"
+        },
+        {
+          "src": "assets/photo/in_between/11.jpg",
+          "caption": "new york, new york"
+        },
+        {
+          "src": "assets/photo/in_between/12.jpg",
+          "caption": "new hampshire"
+        },
+        {
+          "src": "assets/photo/in_between/13.jpg",
+          "caption": "costa rica"
         }
       ]
     }
@@ -144,6 +418,44 @@
         {
           "src": "assets/photo/on_deck/7.jpg",
           "caption": "7"
+        }
+      ]
+    },
+    "pier_couples": {
+      "title": "shared perspective",
+      "desc": "Two individuals together watching one star.",
+      "photos": [
+        {
+          "src": "assets/photo/pier_couples/1.jpg",
+          "caption": "1"
+        },
+        {
+          "src": "assets/photo/pier_couples/2.jpg",
+          "caption": "2"
+        },
+        {
+          "src": "assets/photo/pier_couples/3.jpg",
+          "caption": "3"
+        },
+        {
+          "src": "assets/photo/pier_couples/4.jpg",
+          "caption": "4"
+        },
+        {
+          "src": "assets/photo/pier_couples/5.jpg",
+          "caption": "5"
+        },
+        {
+          "src": "assets/photo/pier_couples/6.jpg",
+          "caption": "6"
+        },
+        {
+          "src": "assets/photo/pier_couples/7.jpg",
+          "caption": "7"
+        },
+        {
+          "src": "assets/photo/pier_couples/8.jpg",
+          "caption": "8"
         }
       ]
     },

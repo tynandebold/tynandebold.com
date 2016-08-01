@@ -50,6 +50,7 @@ body {
     font-size: 14px;
     font-weight: 600;
     color: #0000EE;
+    margin-right: 2px;
   }
 
   .active {
@@ -107,6 +108,10 @@ body {
 .photo-gallery {
   max-width: 650px;
 
+  @include breakpoint(medium) {
+    max-width: 100%;
+  }
+
   .group-title {
     font-size: 17px;
     font-weight: 600;
@@ -121,12 +126,12 @@ body {
   }
 
   .gallery-item {
-    margin-bottom: 30px;
+    margin-bottom: 40px;
   }
 
   .gallery-img-wrapper {
     line-height: 0;
-    margin-bottom: 3px;
+    margin-bottom: 5px;
 
     img {
       width: 100%;
@@ -158,6 +163,10 @@ body {
 
   @include breakpoint(small) {
     line-height: 20px;
+  }
+
+  a {
+    color: #0000EE;
   }
 }
 
