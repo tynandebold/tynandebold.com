@@ -64,6 +64,12 @@ body {
   flex-wrap: wrap;
   justify-content: space-between;
 
+  &:after {
+    content: "";
+    max-width: 300px;
+    flex: auto;
+  }
+
   .gallery-item {
     max-width: 300px;
     margin-bottom: 30px;

@@ -68,6 +68,12 @@
       "link": "http://si.wsj.net/public/resources/images/AM-BK674_HKTYCO_16U_20150906111213.jpg"
     },
     {
+      "src": "assets/dev/scraping.jpg",
+      "title": "Web Scraping: WSJ Clips",
+      "technologies": "jQuery, Node, x-ray",
+      "link": "http://www.tynandebold.com/scraping/"
+    },
+    {
       "src": "assets/dev/singapore.gif",
       "title": "Singapore's 50 Years of Independence",
       "technologies": "Bootstrap, Handlebars, Highcharts, slick",
