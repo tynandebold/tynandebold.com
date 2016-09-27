@@ -5,6 +5,7 @@ var gulp = require('gulp');
 var nunjucks   = require('gulp-nunjucks-render');
 var data       = require('gulp-data');
 var compass    = require('gulp-compass');
+var cleanCSS   = require('gulp-clean-css');
 var livereload = require('gulp-livereload');
 var webserver  = require('gulp-webserver');
 var del        = require('del');
@@ -12,7 +13,9 @@ var runSeq     = require('run-sequence');
 var imagemin   = require('gulp-imagemin');
 
 // specific tasks
-gulp.task('default', ['compass', 'nunjucks', 'watch', 'webserver']);
+gulp.task('default', function(){
+  runSeq('compass', 'nunjucks', 'watch', 'webserver', 'minify-css');
+});
 gulp.task('build', function(){
   runSeq('nunjucks', 'responsive', 'move');
 });
@@ -47,10 +50,18 @@ gulp.task('sass', function(){
     .pipe(gulp.dest('./app/css'));
 });
 
+// minify css
+gulp.task('minify-css', function() {
+  return gulp.src('./app/css/*.css')
+    .pipe(cleanCSS())
+    .pipe(gulp.dest('./app/css'));
+});
+
 // watch files for changes
 gulp.task('watch', function() {
 	livereload.listen()
     gulp.watch('./app/scss/*.scss', ['compass'])
+    gulp.watch('./app/css/*.css', ['minify-css'])
     gulp.watch('./app/**/**/*.+(nunjucks|json)', ['nunjucks']);
 });
 
