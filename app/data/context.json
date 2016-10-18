@@ -7,6 +7,24 @@
   },
   "dev_items": [
     {
+      "src": "assets/dev/danielhuang.jpg",
+      "title": "danielhuang.info",
+      "technologies": "Flexbox, HTML5, Web Font Loader",
+      "link": "http://www.danielhuang.info/"
+    },
+    {
+      "src": "assets/dev/tawnysaez.jpg",
+      "title": "tawnysaez.com",
+      "technologies": "Flexbox, Jekyll, Liquid, YAML",
+      "link": "http://www.tawnysaez.com/"
+    },
+    {
+      "src": "assets/dev/heartland-map.jpg",
+      "title": "Journey Through the Heartland",
+      "technologies": "D3, GDAL, TopoJSON",
+      "link": "http://www.tynandebold.com/heartland-map/"
+    },
+    {
       "src": "assets/dev/asylum.jpg",
       "title": "Mapping Asylum Claims in Europe",
       "technologies": "D3, GDAL, TopoJSON",
