@@ -7,9 +7,15 @@
   },
   "dev_items": [
     {
+      "src": "assets/dev/cafe-disco.jpg",
+      "title": "Cafe Disco",
+      "technologies": "CSS3, Flexbox, jQuery, Web Font Loader",
+      "link": "http://www.tynandebold.com/cafe-disco/"
+    },
+    {
       "src": "assets/dev/danielhuang.jpg",
       "title": "danielhuang.info",
-      "technologies": "Flexbox, HTML5, Web Font Loader",
+      "technologies": "CSS3, Flexbox, Web Font Loader",
       "link": "http://www.danielhuang.info/"
     },
     {
@@ -23,6 +29,12 @@
       "title": "Journey Through the Heartland",
       "technologies": "D3, GDAL, TopoJSON",
       "link": "http://www.tynandebold.com/heartland-map/"
+    },
+    {
+      "src": "assets/dev/geo-pov.jpg",
+      "title": "Geography of Poverty",
+      "technologies": "ES6, Gulp, Heroku, Storysmith",
+      "link": "http://www.nbcnews.com/specials/geographyofpoverty-heartland-1"
     },
     {
       "src": "assets/dev/asylum.jpg",
@@ -108,6 +120,12 @@
       "title": "California's Challenge With Drought",
       "technologies": "D3, Topojson",
       "link": "http://graphics.wsj.com/californias-long-challenge-with-drought/"
+    },
+    {
+      "src": "assets/dev/world-water.jpg",
+      "title": "World Water and Sanitation",
+      "technologies": "Bootstrap, D3, Excel, jQuery, lodash, TopoJSON",
+      "link": "http://graphics.wsj.com/world-water-and-sanitation/"
     },
     {
       "src": "assets/dev/obama-budget.jpg",
