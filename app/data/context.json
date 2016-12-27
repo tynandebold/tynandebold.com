@@ -7,24 +7,6 @@
   },
   "dev_items": [
     {
-      "src": "assets/dev/cafe-disco.jpg",
-      "title": "Cafe Disco",
-      "technologies": "CSS3, Flexbox, jQuery, Web Font Loader",
-      "link": "http://www.tynandebold.com/cafe-disco/"
-    },
-    {
-      "src": "assets/dev/danielhuang.jpg",
-      "title": "danielhuang.info",
-      "technologies": "CSS3, Flexbox, Web Font Loader",
-      "link": "http://www.danielhuang.info/"
-    },
-    {
-      "src": "assets/dev/tawnysaez.jpg",
-      "title": "tawnysaez.com",
-      "technologies": "Flexbox, Jekyll, Liquid, YAML",
-      "link": "http://www.tawnysaez.com/"
-    },
-    {
       "src": "assets/dev/heartland-map.jpg",
       "title": "Journey Through the Heartland",
       "technologies": "D3, GDAL, TopoJSON",
@@ -55,6 +37,42 @@
       "link": "http://graphics.wsj.com/infectious-diseases-and-vaccines/",
       "award1": "http://community.globaleditorsnetwork.org/content/battling-infectious-diseases-20th-century-impact-vaccines-0",
       "award2": "http://www.informationisbeautifulawards.com/showcase/660-vaccines-and-infectious-diseases"
+    },
+    {
+      "src": "assets/dev/cafe-disco.jpg",
+      "title": "Cafe Disco",
+      "technologies": "CSS3, Flexbox, jQuery, Web Font Loader",
+      "link": "http://www.tynandebold.com/cafe-disco/"
+    },
+    {
+      "src": "assets/dev/favicon.jpg",
+      "title": "Favicon Builder",
+      "technologies": "ES6, Flexbox, Node.js, webpack",
+      "link": "http://www.tynandebold.com/favicon-builder/"
+    },
+    {
+      "src": "assets/dev/super.jpg",
+      "title": "Super Duper",
+      "technologies": "ES6, Flexbox, Node.js, webpack",
+      "link": "http://www.tynandebold.com/super-duper/"
+    },
+    {
+      "src": "assets/dev/b2p.jpg",
+      "title": "Bridges to Prosperity Infographics",
+      "technologies": "Illustrator, Photoshop",
+      "link": "https://www.instagram.com/p/BNpQuVZAAZs/"
+    },
+    {
+      "src": "assets/dev/danielhuang.jpg",
+      "title": "danielhuang.info",
+      "technologies": "CSS3, Flexbox, Web Font Loader",
+      "link": "http://www.danielhuang.info/"
+    },
+    {
+      "src": "assets/dev/tawnysaez.jpg",
+      "title": "tawnysaez.com",
+      "technologies": "Flexbox, Jekyll, Liquid, YAML",
+      "link": "http://www.tawnysaez.com/"
     },
     {
       "src": "assets/dev/this-was-home.jpg",
