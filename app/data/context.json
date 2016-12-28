@@ -45,6 +45,12 @@
       "link": "http://www.tynandebold.com/cafe-disco/"
     },
     {
+      "src": "assets/dev/calendar.jpg",
+      "title": "2017 Linear Calendar",
+      "technologies": "D3, ES6, Flexbox, webpack",
+      "link": "http://www.tynandebold.com/linear-calendar/"
+    },
+    {
       "src": "assets/dev/favicon.jpg",
       "title": "Favicon Builder",
       "technologies": "ES6, Flexbox, Node.js, webpack",
@@ -57,10 +63,10 @@
       "link": "http://www.tynandebold.com/super-duper/"
     },
     {
-      "src": "assets/dev/b2p.jpg",
-      "title": "Bridges to Prosperity Infographics",
-      "technologies": "Illustrator, Photoshop",
-      "link": "https://www.instagram.com/p/BNpQuVZAAZs/"
+      "src": "assets/dev/wsj.jpg",
+      "title": "Three Years of Print",
+      "technologies": "CSS3, Vue.js. WSJ graphics created in Illustrator.",
+      "link": "http://www.tynandebold.com/wsj-print-graphics/"
     },
     {
       "src": "assets/dev/danielhuang.jpg",
