@@ -39,6 +39,18 @@
       "award2": "http://www.informationisbeautifulawards.com/showcase/660-vaccines-and-infectious-diseases"
     },
     {
+      "src": "assets/dev/nbc-jobs-site.jpg",
+      "title": "NBC News Digital Careers",
+      "technologies": "Flexbox, JavaScript, Tumblr",
+      "link": "http://nbcnewsdigitaljobs.com/"
+    },
+    {
+      "src": "assets/dev/zika.jpg",
+      "title": "Zika: Year 1",
+      "technologies": "Flexbox, ES6, Swiper",
+      "link": "http://www.nbcnews.com/specials/zika-year-1"
+    },
+    {
       "src": "assets/dev/cafe-disco.jpg",
       "title": "Cafe Disco",
       "technologies": "CSS3, Flexbox, jQuery, Web Font Loader",
