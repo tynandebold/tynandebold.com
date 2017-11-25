@@ -15,9 +15,23 @@
 
 body {
   font-family: 'Source Code Pro', monospace;
+  font-size: 13px;
   margin: 20px;
   max-width: 1000px;
-  font-size: 13px;
+}
+
+html {
+  opacity: 0;
+  transition: all .2s ease;
+}
+
+html.wf-active {
+  opacity: 1;
+}
+
+html.wf-inactive,
+html.wf-fontinactive, {
+  opacity: 1;
 }
 
 /* title styles */

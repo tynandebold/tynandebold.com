@@ -7,6 +7,12 @@
   },
   "dev_items": [
     {
+      "src": "assets/dev/rangerPower.jpg",
+      "title": "Ranger Power",
+      "technologies": "Squarespace, jQuery",
+      "link": "https://www.rangerpower.com/"
+    },
+    {
       "src": "assets/dev/heartland-map.jpg",
       "title": "Journey Through the Heartland",
       "technologies": "D3, GDAL, TopoJSON",
