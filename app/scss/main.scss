@@ -36,28 +36,19 @@ html.wf-fontinactive, {
 
 /* title styles */
 .title-wrapper {
-  margin-bottom: 14px;
-
   h1 {
     font-size: 24px;
     line-height: 34px;
-    display: inline-block;
-  }
-
-  h3 {
-    font-size: 17px;
-    line-height: 19px;
-    font-weight: 300;
     display: inline-block;
   }
 }
 
 /* navigation styles */
 .nav {
-  margin: 17px 0 34px;
+  margin: 7px 0 34px;
 
   @include breakpoint(medium) {
-    margin: 17px 0 28px;
+    margin: 7px 0 28px;
   }
 
   a {

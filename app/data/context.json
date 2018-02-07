@@ -1,7 +1,7 @@
 {
   "meta": {
     "title": "Tynan DeBold",
-    "short_desc": "Front-End Developer/Photographer",
+    "short_desc": "",
     "long_desc": "Award-winning multimedia and graphics editor with extensive experience in newsroom settings. Hands-on conceptualization, management and execution of editorial content.",
     "keywords": "tynan debold, tynandebold, tynan, debold, developer, interactive developer, data visualization, data viz, dataviz, front-end developer, photography, photographer, the wall street journal, wsj, msnbc, msnbc.com, nbc, media, journalism"
   },
@@ -90,7 +90,7 @@
       "src": "assets/dev/danielhuang.jpg",
       "title": "danielhuang.info",
       "technologies": "CSS3, Flexbox, Web Font Loader",
-      "link": "http://www.danielhuang.info/"
+      "link": "http://www.tynandebold.com/danielhuang/"
     },
     {
       "src": "assets/dev/tawnysaez.jpg",
