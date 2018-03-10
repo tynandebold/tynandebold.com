@@ -75,14 +75,14 @@ gulp.task('webserver', function(){
 
 // image optimization
 gulp.task('responsive', function() {
-  del('./docs/**/*');
+  del('./build/**/*');
   return gulp.src('./app/assets/photo/**/*.jpg')
     .pipe(imagemin({progressive: true}))
-    .pipe(gulp.dest('./docs/assets/photo'));
+    .pipe(gulp.dest('./build/assets/photo'));
 });
 
 // move necessary files to build dir
 gulp.task('move', function(){
   return gulp.src(['./app/assets/dev/**/*', './app/css/**/*', './app/*.html', './app/js/*.js'], {base: 'app'})
-    .pipe(gulp.dest('./docs'));
+    .pipe(gulp.dest('./build'));
 });
