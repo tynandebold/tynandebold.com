@@ -7,6 +7,12 @@
   },
   "dev_items": [
     {
+      "src": "assets/dev/doggos.jpg",
+      "title": "Doggie Dictionary",
+      "technologies": "React, Async/Await, Fetch",
+      "link": "https://www.tynandebold.com/doggie-dictionary/"
+    },
+    {
       "src": "assets/dev/rangerPower.jpg",
       "title": "Ranger Power",
       "technologies": "Squarespace, jQuery",
@@ -480,6 +486,7 @@
     "on_deck": {
       "title": "on deck",
       "desc": "A small place of apprehension and preparation.",
+      "highlight_photo": "assets/photo/on_deck/1.jpg",
       "photos": [
         {
           "src": "assets/photo/on_deck/1.jpg",
@@ -514,6 +521,7 @@
     "pier_couples": {
       "title": "shared perspective",
       "desc": "Two individuals together watching one star.",
+      "highlight_photo": "assets/photo/pier_couples/1.jpg",
       "photos": [
         {
           "src": "assets/photo/pier_couples/1.jpg",
@@ -552,6 +560,7 @@
     "alleys": {
       "title": "tin pan alley",
       "desc": "Areas overlooked, illuminated.",
+      "highlight_photo": "assets/photo/alley/alley-0.jpg",
       "photos": [
         {
           "src": "assets/photo/alley/alley-0.jpg",
