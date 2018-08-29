@@ -7,6 +7,12 @@
   },
   "dev_items": [
     {
+      "src": "assets/dev/upcoming-music.jpg",
+      "title": "Upcoming Music",
+      "technologies": "React, Local storage, ES7",
+      "link": "https://www.tynandebold.com/upcoming-music/"
+    },
+    {
       "src": "assets/dev/doggos.jpg",
       "title": "Doggie Dictionary",
       "technologies": "React, Async/Await, Fetch",

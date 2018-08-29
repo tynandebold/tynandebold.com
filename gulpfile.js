@@ -1,27 +1,27 @@
-// include gulp
 var gulp = require('gulp');
 
-// include plugins
-var nunjucks   = require('gulp-nunjucks-render');
-var data       = require('gulp-data');
-var compass    = require('gulp-compass');
-var cleanCSS   = require('gulp-clean-css');
+var cleanCSS = require('gulp-clean-css');
+var compass = require('gulp-compass');
+var data = require('gulp-data');
+var del = require('del');
+var { exec } = require('child_process');
+var imagemin = require('gulp-imagemin');
 var livereload = require('gulp-livereload');
-var webserver  = require('gulp-webserver');
-var del        = require('del');
-var runSeq     = require('run-sequence');
-var imagemin   = require('gulp-imagemin');
+var nunjucks = require('gulp-nunjucks-render');
+var runSeq = require('run-sequence');
+var webserver = require('gulp-webserver');
 
 // specific tasks
-gulp.task('default', function(){
+gulp.task('default', function() {
   runSeq('compass', 'nunjucks', 'watch', 'webserver', 'minify-css');
 });
-gulp.task('build', function(){
-  runSeq('nunjucks', 'responsive', 'move');
+
+gulp.task('build', function() {
+  runSeq('nunjucks', 'responsive', 'move', 'copy');
 });
 
 // get data; run nunjucks to compile static html files
-gulp.task('nunjucks', function(){
+gulp.task('nunjucks', function() {
   return gulp.src('./app/pages/**/*.nunjucks')
     .pipe(data(function() {
       var data = require('./app/data/context.json');
@@ -44,9 +44,9 @@ gulp.task('compass', function() {
 });
 
 // compile scss
-gulp.task('sass', function(){
+gulp.task('sass', function() {
   return gulp.src('./app/scss/*.scss')
-    .pipe(sass({compass: true}))
+    .pipe(sass({ compass: true }))
     .pipe(gulp.dest('./app/css'));
 });
 
@@ -59,30 +59,39 @@ gulp.task('minify-css', function() {
 
 // watch files for changes
 gulp.task('watch', function() {
-	livereload.listen()
-    gulp.watch('./app/scss/*.scss', ['compass'])
-    gulp.watch('./app/css/*.css', ['minify-css'])
-    gulp.watch('./app/**/**/*.+(nunjucks|json)', ['nunjucks']);
+  livereload.listen()
+  gulp.watch('./app/scss/*.scss', ['compass'])
+  gulp.watch('./app/css/*.css', ['minify-css'])
+  gulp.watch('./app/**/**/*.+(nunjucks|json)', ['nunjucks']);
 });
 
 // run a local server
-gulp.task('webserver', function(){
-	return gulp.src('./app/')
-		.pipe(webserver({
-			open: true
-		}));
+gulp.task('webserver', function() {
+  return gulp.src('./app/')
+    .pipe(webserver({
+      open: true
+    }));
 });
 
 // image optimization
 gulp.task('responsive', function() {
   del('./build/**/*');
   return gulp.src('./app/assets/photo/**/*.jpg')
-    .pipe(imagemin({progressive: true}))
+    .pipe(imagemin({ progressive: true }))
     .pipe(gulp.dest('./build/assets/photo'));
 });
 
 // move necessary files to build dir
-gulp.task('move', function(){
-  return gulp.src(['./app/assets/dev/**/*', './app/css/**/*', './app/*.html', './app/js/*.js'], {base: 'app'})
+gulp.task('move', function() {
+  return gulp.src(['./app/assets/dev/**/*', './app/css/**/*', './app/*.html', './app/js/*.js'], { base: 'app' })
     .pipe(gulp.dest('./build'));
+});
+
+gulp.task('copy', function() {
+  exec('cp -r ./build/ ~/sites/tynandebold.github.io/', function(error) {
+    if (error) {
+      console.error('exec error: ', error);
+      return;
+    }
+  });
 });
