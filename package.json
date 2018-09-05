@@ -24,5 +24,8 @@
     "gulp-responsive": "^2.3.0",
     "gulp-webserver": "^0.9.1",
     "run-sequence": "^1.1.5"
+  },
+  "dependencies": {
+    "gulp": "^3.9.1"
   }
 }
