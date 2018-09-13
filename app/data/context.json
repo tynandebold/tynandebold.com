@@ -7,6 +7,12 @@
   },
   "dev_items": [
     {
+      "src": "assets/dev/weather-cli.jpg",
+      "title": "U.S. Weather CLI",
+      "technologies": "Node.js, npm",
+      "link": "https://www.npmjs.com/package/us-weather-cli"
+    },
+    {
       "src": "assets/dev/upcoming-music.jpg",
       "title": "Upcoming Music",
       "technologies": "React, Local storage, ES7",
