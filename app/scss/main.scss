@@ -15,7 +15,8 @@
 
 body {
   font-family: 'Source Code Pro', monospace;
-  font-size: 13px;
+  font-size: 14px;
+  line-height: 21px;
   margin: 20px;
   max-width: 1000px;
 }
@@ -33,11 +34,11 @@ body {
 .nav {
   align-items: center;
   display: flex;
+  line-height: 13px;
   margin: 0 0 28px;
 
   a {
     color: #0000EE;
-    font-size: 14px;
     font-weight: 600;
     margin-right: 10px;
   }
@@ -83,10 +84,6 @@ body {
   }
 
   .desc-item {
-    font-size: 13px;
-    line-height: 17px;
-    margin-bottom: 3px;
-
     a {
       color: #0000EE;
     }
@@ -107,16 +104,14 @@ body {
   }
 
   .group-title {
-    font-size: 17px;
     font-weight: 600;
-    margin-bottom: 4px;
     text-transform: uppercase;
   }
 
   .group-desc {
     font-weight: 300;
-    line-height: 17px;
-    margin-bottom: 17px;
+    line-height: 21px;
+    margin-bottom: 14px;
   }
 
   .gallery-item {
@@ -144,14 +139,12 @@ body {
 
   .caption {
     text-align: center;
-    line-height: 17px;
   }
 }
 
 
 /* about page styles */
 .about-txt {
-  line-height: 17px;
   margin-bottom: 30px;
   max-width: 480px;
 
@@ -167,11 +160,11 @@ body {
 
 /* footer styles */
 footer {
-  p {
-    line-height: 17px;
-  }
-
   p:last-child {
     margin-bottom: 35px;
   }
+}
+
+strong {
+  font-weight: 600;
 }
