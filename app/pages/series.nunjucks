@@ -12,7 +12,7 @@
         {% for photo in content.photos %}
         <div class="gallery-item">
           <div class="gallery-img-wrapper">
-            <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="{{photo.src}}" alt="{{photo.caption}}" class="lazyload" />
+            <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="{{photo.src}}" alt="Photograph of {{content.title}}" class="lazyload" />
           </div>
           <div class="caption">{{photo.caption}}</div>
         </div>

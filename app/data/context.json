@@ -141,11 +141,6 @@
       "link": "http://graphics.wsj.com/markets-and-finance-year-in-charts/"
     },
     {
-      "src": "assets/dev/yuan.jpg",
-      "title": "Why China Devalued the Yuan",
-      "technologies": "Excel, Handlebars, Highcharts, Moment",
-      "link": "http://graphics.wsj.com/china-devalues-the-yuan/"
-    },{
       "src": "assets/dev/carousel.jpg",
       "title": "Newsroom Tool: Embeddable Carousel",
       "technologies": "bxSlider, Handlebars, jQuery UI, PHP",
@@ -170,7 +165,7 @@
       "link": "http://www.tynandebold.com/scraping/"
     },
     {
-      "src": "assets/dev/singapore.gif",
+      "src": "assets/dev/singapores-rise.jpg",
       "title": "Singapore's 50 Years of Independence",
       "technologies": "Bootstrap, Handlebars, Highcharts, slick",
       "link": "http://graphics.wsj.com/singapore-50th-anniversary/"
