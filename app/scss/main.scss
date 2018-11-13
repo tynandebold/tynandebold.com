@@ -15,7 +15,8 @@
 
 body {
   font-family: 'Source Code Pro', monospace;
-  font-size: 13px;
+  font-size: 14px;
+  line-height: 21px;
   margin: 20px;
   max-width: 1000px;
 }
@@ -23,25 +24,23 @@ body {
 /* title styles */
 .title-wrapper {
   h1 {
+    display: inline-block;
     font-size: 24px;
     line-height: 34px;
-    display: inline-block;
   }
 }
 
 /* navigation styles */
 .nav {
-  margin: 7px 0 34px;
-
-  @include breakpoint(medium) {
-    margin: 7px 0 28px;
-  }
+  align-items: center;
+  display: flex;
+  line-height: 13px;
+  margin: 0 0 28px;
 
   a {
-    font-size: 14px;
-    font-weight: 600;
     color: #0000EE;
-    margin-right: 2px;
+    font-weight: 600;
+    margin-right: 10px;
   }
 
   .active {
@@ -85,10 +84,6 @@ body {
   }
 
   .desc-item {
-    margin-bottom: 3px;
-    font-size: 13px;
-    line-height: 17px;
-
     a {
       color: #0000EE;
     }
@@ -109,16 +104,14 @@ body {
   }
 
   .group-title {
-    font-size: 17px;
     font-weight: 600;
     text-transform: uppercase;
-    margin-bottom: 4px;
   }
 
   .group-desc {
     font-weight: 300;
-    line-height: 17px;
-    margin-bottom: 17px;
+    line-height: 21px;
+    margin-bottom: 14px;
   }
 
   .gallery-item {
@@ -146,16 +139,14 @@ body {
 
   .caption {
     text-align: center;
-    line-height: 17px;
   }
 }
 
 
 /* about page styles */
 .about-txt {
-  max-width: 480px;
-  line-height: 17px;
   margin-bottom: 30px;
+  max-width: 480px;
 
   @include breakpoint(small) {
     line-height: 20px;
@@ -169,11 +160,11 @@ body {
 
 /* footer styles */
 footer {
-  p {
-    line-height: 17px;
-  }
-
   p:last-child {
     margin-bottom: 35px;
   }
+}
+
+strong {
+  font-weight: 600;
 }

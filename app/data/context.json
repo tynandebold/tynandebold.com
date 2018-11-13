@@ -7,6 +7,12 @@
   },
   "dev_items": [
     {
+      "src": "assets/dev/peekture.jpg",
+      "title": "Peekture Frame",
+      "technologies": "Canvas, React",
+      "link": "https://www.tynandebold.com/peekture-frame/"
+    },
+    {
       "src": "assets/dev/weather-cli.jpg",
       "title": "U.S. Weather CLI",
       "technologies": "Node.js, npm",
