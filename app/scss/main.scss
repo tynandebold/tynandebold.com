@@ -2,11 +2,11 @@
 @import "compass/css3";
 
 @mixin breakpoint($point) {
-  @if $point == xLarge {
-      @media (min-width: 1501px) { @content; }
+  @if $point == large {
+      @media (min-width: 1650px) { @content; }
   }
   @else if $point == medium {
-      @media (max-width: 1100px) { @content; }
+      @media (max-width: 1221px) { @content; }
   }
   @else if $point == small {
       @media (max-width: 767px)  { @content; }
@@ -63,7 +63,7 @@ nav {
   max-width: 800px;
   width: 100%;
 
-  @include breakpoint(xLarge) {
+  @include breakpoint(large) {
     max-width: 1200px;
   }
 
@@ -122,7 +122,7 @@ nav {
   max-width: 650px;
   width: 100%;
 
-  @include breakpoint(xLarge) {
+  @include breakpoint(large) {
     max-width: 850px;
   }
 
