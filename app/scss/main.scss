@@ -69,14 +69,15 @@ nav {
 
   @include breakpoint(medium) {
     margin: 0;
+    max-width: 1000px;
   }
 
   .gallery-item {
-    max-width: 378px;
+    max-width: 47.5%;
     margin-bottom: 2.5em;
 
     @include breakpoint(medium) {
-      max-width: 300px;
+      max-width: 31%;
     }
 
     @include breakpoint(small) {
@@ -86,17 +87,8 @@ nav {
   }
 
   .gallery-img-wrapper {
-    height: 252px;
     overflow: hidden;
     margin-bottom: 0.35em;
-
-    @include breakpoint(medium) {
-      height: 200px;
-    }
-
-    @include breakpoint(small) {
-      height: auto;
-    }
 
     img {
       width: 100%;
