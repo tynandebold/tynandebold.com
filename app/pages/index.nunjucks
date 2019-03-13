@@ -9,7 +9,7 @@
     {% for dev_item in dev_items %}
     <div class="gallery-item">
       <div class="gallery-img-wrapper">
-        <img src="{{dev_item.src}}" alt="{{dev_item.title}}">
+        <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="{{dev_item.src}}" alt="{{dev_item.title}}" class="lazyload" />
       </div>
       <div class="proj-title desc-item">
         <a class="proj-link" href="{{dev_item.link}}" target="_blank" rel="noopener">{{dev_item.title}}</a>
