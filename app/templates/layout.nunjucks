@@ -4,21 +4,15 @@
   <meta charset="UTF-8">
   <title>{{meta.title}}</title>
   <link rel="shortcut icon" type="image/x-icon" href="assets/dev/favicon.ico">
-
   <meta name="description" content="{{meta.long_desc}}">
 	<meta name="keywords" content="{{meta.keywords}}">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-
   <link rel="stylesheet" href="css/main.css">
-
   <style>
     html { opacity: 0; transition: all .2s ease; } html.wf-active { opacity: 1; } html.wf-inactive, html.wf-fontinactive, { opacity: 1; }
   </style>
 </head>
 <body>
-  <div class="title-wrapper">
-    <h1>{{meta.title}}</h1>
-  </div>
   {% block content %} {% endblock %}
   <footer>
     <p>–</p>
@@ -30,7 +24,7 @@
     document.getElementById('year').innerHTML = new Date().getFullYear();
   </script>
   <script src="js/lazysizes.min.js"></script>
-  <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.16/webfont.js"></script>
+  <script src="//ajax.googleapis.com/ajax/libs/webfont/1.6.16/webfont.js"></script>
   <script>
     WebFont.load({
       google: {
