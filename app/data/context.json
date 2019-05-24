@@ -6,6 +6,12 @@
   },
   "dev_items": [
     {
+      "src": "assets/dev/mobile-addiction-test.jpg",
+      "title": "Mobilafhængighed",
+      "technologies": "Jade, jQuery",
+      "link": "https://danicapension.dk/privat/vaerktoejer/sundhedsvaerktoejer/mobilafhaengighed"
+    },
+    {
       "src": "assets/dev/daylight.jpg",
       "title": "Daylight",
       "technologies": "React, Now, Express",
