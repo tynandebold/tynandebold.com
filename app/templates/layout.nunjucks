@@ -2,18 +2,18 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>{{meta.title}}</title>
+  <title>{{page}} · {{meta.title}}</title>
   <link rel="shortcut icon" type="image/x-icon" href="assets/dev/favicon.ico">
   <meta name="description" content="{{meta.long_desc}}">
 	<meta name="keywords" content="{{meta.keywords}}">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="css/main.min.css">
   <style>
-    html { opacity: 0; transition: all .2s ease; } html.wf-active { opacity: 1; } html.wf-inactive, html.wf-fontinactive, { opacity: 1; }
+    html { opacity: 0; transition: all .125s ease; } html.wf-active { opacity: 1; } html.wf-inactive, html.wf-fontinactive, { opacity: 1; }
   </style>
 </head>
 <body>
-  {% block content %} {% endblock %}
+  <main>{% block content %} {% endblock %}</main>
   <footer>
     <p>–</p>
     <p>© Tynan DeBold <span id="year"></span></p>

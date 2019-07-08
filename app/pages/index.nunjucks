@@ -1,4 +1,5 @@
 {% extends "layout.nunjucks" %}
+{% set page = "Work" %}
 
 {% block content %}
 

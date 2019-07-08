@@ -1,5 +1,6 @@
 var gulp = require('gulp');
 
+var fs = require('fs');
 var cleanCSS = require('gulp-clean-css');
 var compass = require('gulp-compass');
 var data = require('gulp-data');
@@ -27,8 +28,7 @@ gulp.task('nunjucks', function() {
     .src('./app/pages/**/*.nunjucks')
     .pipe(
       data(function() {
-        var data = require('./app/data/context.json');
-        return data;
+        return JSON.parse(fs.readFileSync('./app/data/context.json'));
       })
     )
     .pipe(
@@ -67,7 +67,10 @@ gulp.task('watch', function() {
   livereload.listen();
   gulp.watch('./app/scss/*.scss', ['compass']);
   gulp.watch('./app/css/*.min.css', ['minify-css']);
-  gulp.watch('./app/**/**/*.+(nunjucks|json)', ['nunjucks']);
+  gulp.watch(
+    ['./app/**/**/*.+(nunjucks|json)', './app/data/*.json'],
+    ['nunjucks']
+  );
 });
 
 // run a local server

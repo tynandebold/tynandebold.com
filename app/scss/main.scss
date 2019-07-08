@@ -3,18 +3,25 @@
 
 @mixin breakpoint($point) {
   @if $point == large {
-      @media (min-width: 1650px) { @content; }
-  }
-  @else if $point == medium {
-      @media (max-width: 1221px) { @content; }
-  }
-  @else if $point == small {
-      @media (max-width: 767px)  { @content; }
+    @media (min-width: 1650px) {
+      @content;
+    }
+  } @else if $point == medium {
+    @media (max-width: 1221px) {
+      @content;
+    }
+  } @else if $point == small {
+    @media (max-width: 767px) {
+      @content;
+    }
   }
 }
 
 body {
-  font-family: 'Source Code Pro', monospace;
+  display: flex;
+  flex-direction: column;
+  min-height: calc(100vh - 4em);
+  font-family: "Source Code Pro", monospace;
   font-size: 100%;
   line-height: 1.5em;
   margin: 2em;
@@ -24,7 +31,7 @@ body {
 h1 {
   font-size: 1.5em;
   line-height: 1em;
-  margin-bottom: 0.75em;
+  margin-bottom: 0.5em;
   width: 100%;
 }
 
@@ -33,7 +40,7 @@ nav {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-  margin: 0 0 2em;
+  margin: 0 0 1em;
   position: fixed;
 
   @include breakpoint(medium) {
@@ -42,7 +49,7 @@ nav {
   }
 
   a {
-    color: #0000EE;
+    color: #0000ee;
     font-weight: 600;
     margin-bottom: 0.2em;
     margin-right: 0.75em;
@@ -50,7 +57,7 @@ nav {
   }
 
   .active {
-    color: #551A8B;
+    color: #551a8b;
   }
 }
 
@@ -97,13 +104,13 @@ nav {
 
   .desc-item {
     a {
-      color: #0000EE;
+      color: #0000ee;
     }
   }
 }
 
 .dev-gallery::after {
-  content: '';
+  content: "";
   margin-right: 378px;
 }
 
@@ -119,24 +126,6 @@ nav {
 
   @include breakpoint(medium) {
     max-width: 100%;
-  }
-
-  .group-title {
-    font-weight: 600;
-    text-transform: uppercase;
-
-    &:first-of-type {
-      padding-top: 0.25em;
-
-      @include breakpoint(medium) {
-        padding-top: 0;
-      }
-    }
-  }
-
-  .group-desc {
-    font-weight: 300;
-    margin-bottom: 1em;
   }
 
   .gallery-item {
@@ -156,7 +145,7 @@ nav {
     .lazyloading {
       opacity: 0;
     }
-    
+
     .lazyloaded {
       opacity: 1;
       transition: opacity 0.5s;
@@ -168,9 +157,9 @@ nav {
   }
 }
 
-
 /* about page styles */
-.about-text {
+.about-text,
+.various-items {
   margin: 0 auto 2em;
   max-width: 600px;
   padding-top: 0.25em;
@@ -181,10 +170,48 @@ nav {
   }
 
   a {
-    color: #0000EE;
+    color: #0000ee;
   }
+}
+
+/* shared text and misc styles */
+.group-title {
+  font-weight: 600;
+  text-transform: uppercase;
+
+  &:first-of-type {
+    padding-top: 0.25em;
+
+    @include breakpoint(medium) {
+      padding-top: 0;
+    }
+  }
+}
+
+.group-desc {
+  font-weight: 300;
+  margin-bottom: 1em;
 }
 
 strong {
   font-weight: 600;
+}
+
+.various-items {
+  .group-title:not(:first-of-type) {
+    margin-top: 3em;
+  }
+
+  ul {
+    list-style: disc;
+    margin-block-end: 1em;
+    margin-block-start: 1em;
+    margin-inline-end: 0px;
+    margin-inline-start: 0px;
+    padding-inline-start: 40px;
+  }
+}
+
+footer {
+  margin-top: auto;
 }
