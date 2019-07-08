@@ -510,7 +510,6 @@
     "on_deck": {
       "title": "on deck",
       "desc": "A small place of apprehension and preparation.",
-      "highlight_photo": "assets/photo/on_deck/1.jpg",
       "photos": [
         {
           "src": "assets/photo/on_deck/1.jpg",
@@ -545,7 +544,6 @@
     "pier_couples": {
       "title": "shared perspective",
       "desc": "Two individuals together watching one star.",
-      "highlight_photo": "assets/photo/pier_couples/1.jpg",
       "photos": [
         {
           "src": "assets/photo/pier_couples/1.jpg",
@@ -584,7 +582,6 @@
     "alleys": {
       "title": "tin pan alley",
       "desc": "Areas overlooked, illuminated.",
-      "highlight_photo": "assets/photo/alley/alley-0.jpg",
       "photos": [
         {
           "src": "assets/photo/alley/alley-0.jpg",
@@ -684,6 +681,196 @@
           "src": "assets/photo/door/door-12.jpg",
           "caption": "12"
         }
+      ]
+    }
+  },
+  "various": {
+    "books": {
+      "title": "books",
+      "desc": "An incomplete list of works I've read and enjoyed, in no particular order.",
+      "items": [
+        {
+          "title": "East of Eden",
+          "link": "https://www.amazon.com/dp/0140186395"
+        },
+        {
+          "title": "Of Mice and Men",
+          "link": "https://www.amazon.com/dp/0140177396"
+        },
+        {
+          "title": "Tortilla Flat",
+          "link": "https://www.amazon.com/dp/0140187405"
+        },
+        {
+          "title": "The Idiot",
+          "link": "https://www.amazon.com/dp/1853261750"
+        },
+        {
+          "title": "The Brothers Karamazov",
+          "link": "https://www.amazon.com/dp/0374528373"
+        },
+        {
+          "title": "Amerika",
+          "link": "https://www.amazon.com/dp/0805211616"
+        },
+        {
+          "title": "For Whom the Bell Tolls",
+          "link": "https://www.amazon.com/dp/0684803356"
+        },
+        {
+          "title": "The Old Man and The Sea",
+          "link": "https://www.amazon.com/dp/0684801221"
+        },
+        {
+          "title": "The Nick Adams Stories",
+          "link": "https://www.amazon.com/dp/0684169401"
+        },
+        {
+          "title": "Out of Africa",
+          "link": "https://www.amazon.com/dp/0679600213"
+        },
+        {
+          "title": "Lord of the Flies",
+          "link": "https://www.amazon.com/dp/0399501487"
+        },
+        {
+          "title": "Outlaw Sea",
+          "link": "https://www.amazon.com/dp/0865477221"
+        },
+        {
+          "title": "Into Thin Air",
+          "link": "https://www.amazon.com/dp/0385494785"
+        },
+        {
+          "title": "Founding Brothers",
+          "link": "https://www.amazon.com/dp/0375705244"
+        },
+        {
+          "title": "The Hitchhiker's Guide to the Galaxy",
+          "link": "https://www.amazon.com/dp/0345391802"
+        },
+        {
+          "title": "Brave New World",
+          "link": "https://www.amazon.com/dp/0060850523"
+        },
+        {
+          "title": "1Q84",
+          "link": "https://www.amazon.com/dp/0307476464"
+        },
+        {
+          "title": "Norwegian Wood",
+          "link": "https://www.amazon.com/dp/0375704027"
+        },
+        {
+          "title": "Kafka on the Shore ",
+          "link": "https://www.amazon.com/dp/1400079276"
+        },
+        {
+          "title": "Ishmael",
+          "link": "https://www.amazon.com/dp/0553375407"
+        },
+        {
+          "title": "Barbarian Days: A Surfing Life",
+          "link": "https://www.amazon.com/dp/0143109391"
+        },
+        {
+          "title": "My Struggle: Book 1",
+          "link": "https://www.amazon.com/dp/0374534144"
+        },
+        {
+          "title": "My Struggle: Book 2",
+          "link": "https://www.amazon.com/dp/0374534152"
+        },
+        {
+          "title": "My Struggle: Book 3",
+          "link": "https://www.amazon.com/dp/0374534160"
+        },
+        {
+          "title": "My Struggle: Book 4",
+          "link": "https://www.amazon.com/dp/0374534179"
+        },
+        {
+          "title": "My Struggle: Book 5",
+          "link": "https://www.amazon.com/dp/0374534187"
+        },
+        {
+          "title": "My Struggle: Book 6",
+          "link": "https://www.amazon.com/dp/0914671995"
+        }
+      ]
+    },
+    "music": {
+      "title": "music",
+      "desc": "Songs, mixes, and albums I come back to.",
+      "items": [
+        {
+          "title": "Dnb Mix Of Love - Mat Zo",
+          "link": "https://soundcloud.com/eric-martin-bustamante/mat-zo-dnb-mix-of-love"
+        },
+        {
+          "title": "Summertime Mixtape Vol 1 - DJ Jazzy Jeff & MICK",
+          "link": "https://www.mixcloud.com/SoulCoolRecords/dj-jazzy-jeff-mick-boogie-summertime-mixtape-vol-1-2010/"
+        },
+        {
+          "title": "April In July - Istomina Karina",
+          "link": "https://soundcloud.com/karinaistomina/april-in-july"
+        },
+        {
+          "title": "Selfless State - So Inagawa",
+          "link": "https://soundcloud.com/norman-onyme/so-inagawa-selfless-state"
+        },
+        {
+          "title": "Arcade Summer - FM84",
+          "link": "https://soundcloud.com/fm84/arcade-summer-album"
+        },
+        {
+          "title": "December 2013 - East End Dubs",
+          "link": "https://soundcloud.com/eastenddubs/east-end-dubs-december-2013"
+        },
+        {
+          "title": "Lazy Sunday Selecta - Breakbot",
+          "link": "https://soundcloud.com/edbangerrecords/breakbot-lazy-sunday-selecta"
+        },
+        {
+          "title": "Boiler Room Berlin Live Set - David August",
+          "link": "https://soundcloud.com/platform/david-august"
+        }
+      ]
+    },
+    "travel": {
+      "title": "travel",
+      "desc": "All of the countries I've been lucky enough to visit over the course of my life. * = places lived.",
+      "items": [
+        "United States*",
+        "Canada",
+        "The Bahamas",
+        "Cuba",
+        "Nicaragua",
+        "Costa Rica",
+        "Colombia",
+        "England",
+        "Portugal",
+        "Spain*",
+        "France",
+        "Belgium",
+        "The Netherlands",
+        "Germany",
+        "Denmark*",
+        "Norway",
+        "Sweden",
+        "Italy",
+        "Vatican City",
+        "Malta",
+        "Romania",
+        "Jordan",
+        "Uganda",
+        "Rwanda",
+        "Thailand",
+        "Malaysia",
+        "Singapore",
+        "Hong Kong*",
+        "South Korea",
+        "Japan"
       ]
     }
   }

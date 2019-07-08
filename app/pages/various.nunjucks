@@ -1,0 +1,33 @@
+{% extends "layout.nunjucks" %}
+{% set page = "Various" %}
+
+{% block content %}
+
+  {% import 'macros/nav-macro.nunjucks' as nav %}
+  {{nav.active('various')}}
+
+    <div class="various-items">
+      {% for group, content in various %}
+      <h3 class="group-title">{{content.title}}</h3>
+      {% if content.title === 'travel' %}
+        <h3 class="group-desc">{{content.desc}} Count: {{content.items | length}}.</h3>
+      {% else %}
+        <h3 class="group-desc">{{content.desc}}</h3>
+      {% endif %}
+      <ul>
+        {% if content.title === 'travel' %}
+          {% for item in content.items %}
+          <li>{{item}}</li>
+        {% endfor %}
+        {% else %}
+          {% for item in content.items %}
+          <li>
+            <a href={{item.link}} target="_blank" rel="noopener">{{item.title}}</a>
+          </li>
+        {% endfor %}
+        {% endif %}
+      </ul>
+      {% endfor %}
+    </div>
+
+{% endblock %}

@@ -3,7 +3,8 @@
     <h1>Tynan DeBold</h1>
     <a href="/" class="{%if activePage == 'dev' %}active{% endif %}">Work</a>
     <a href="photo.html" class="{%if activePage == 'photo' %}active{% endif %}">Photo</a>
-    <a href="series.html" class="{%if activePage == 'series' %}active{% endif %}">Projects</a>
+    <a href="series.html" class="{%if activePage == 'series' %}active{% endif %}">Series</a>
+    <a href="various.html" class="{%if activePage == 'various' %}active{% endif %}">Various</a>
     <a href="https://tynandebold.tumblr.com" target="_blank" rel="noopener" class="{%if activePage == 'blog' %}active{% endif %}">Blog</a>
     <a href="about.html" class="{%if activePage == 'about' %}active{% endif %}">About</a>
     <a href="https://webring.xxiivv.com/#random" target="_blank" rel="noopener" class="webring-link" style="font-size: 0;">
