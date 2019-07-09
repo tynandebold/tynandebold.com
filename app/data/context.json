@@ -6,6 +6,12 @@
   },
   "dev_items": [
     {
+      "src": "assets/dev/show-quizzes.jpg",
+      "title": "Show Quizzes",
+      "technologies": "Next.js",
+      "link": "https://show-quizzes.now.sh/the-office"
+    },
+    {
       "src": "assets/dev/mobile-addiction-test.jpg",
       "title": "Mobilafhængighed",
       "technologies": "Jade, jQuery",
