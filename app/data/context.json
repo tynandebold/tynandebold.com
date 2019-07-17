@@ -6,6 +6,12 @@
   },
   "dev_items": [
     {
+      "src": "assets/dev/url-parser.jpg",
+      "title": "URL Parser",
+      "technologies": "React",
+      "link": "https://tynandebold.com/url-parser/"
+    },
+    {
       "src": "assets/dev/show-quizzes.jpg",
       "title": "Show Quizzes",
       "technologies": "Next.js",
