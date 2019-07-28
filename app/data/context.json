@@ -6,6 +6,18 @@
   },
   "dev_items": [
     {
+      "src": "assets/dev/aagaard-design-studio.jpg",
+      "title": "Aagaard Design Studio",
+      "technologies": "Contentful, Gatsby.js, Netlify",
+      "link": "https://aagaarddesign.studio/"
+    },
+    {
+      "src": "assets/dev/aagaard-design-studio-admin.jpg",
+      "title": "Aagaard Design Studio · Admin",
+      "technologies": "Express, Heroku, MongoDB, Next.js, styled-components, Passport",
+      "link": "https://github.com/tynandebold/aagaard-design-studio-admin"
+    },
+    {
       "src": "assets/dev/url-parser.jpg",
       "title": "URL Parser",
       "technologies": "React",
