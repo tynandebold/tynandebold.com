@@ -1,21 +1,23 @@
 var gulp = require('gulp');
 
-var fs = require('fs');
+var { exec } = require('child_process');
 var cleanCSS = require('gulp-clean-css');
-var compass = require('gulp-compass');
 var data = require('gulp-data');
 var del = require('del');
-var { exec } = require('child_process');
+var fs = require('fs');
 var imagemin = require('gulp-imagemin');
 var livereload = require('gulp-livereload');
 var nunjucks = require('gulp-nunjucks-render');
-var runSeq = require('run-sequence');
-var webserver = require('gulp-webserver');
 var rename = require('gulp-rename');
+var runSeq = require('run-sequence');
+var sass = require('gulp-sass');
+var webserver = require('gulp-webserver');
+
+sass.compiler = require('node-sass');
 
 // specific tasks
 gulp.task('default', function() {
-  runSeq('compass', 'nunjucks', 'watch', 'webserver');
+  runSeq('sass', 'nunjucks', 'watch', 'webserver');
 });
 
 gulp.task('build', function() {
@@ -39,17 +41,11 @@ gulp.task('nunjucks', function() {
     .pipe(gulp.dest('./app'));
 });
 
-// config scss/css with compass
-gulp.task('compass', function() {
+// compile sass file(s)
+gulp.task('sass', function() {
   return gulp
     .src('./app/scss/*.scss')
-    .pipe(
-      compass({
-        config_file: './config.rb',
-        css: './app/css',
-        sass: './app/scss'
-      })
-    )
+    .pipe(sass().on('error', sass.logError))
     .pipe(rename('main.min.css'))
     .pipe(gulp.dest('./app/css'));
 });
@@ -65,7 +61,7 @@ gulp.task('minify-css', function() {
 // watch files for changes
 gulp.task('watch', function() {
   livereload.listen();
-  gulp.watch('./app/scss/*.scss', ['compass']);
+  gulp.watch('./app/scss/*.scss', ['sass']);
   gulp.watch('./app/css/*.min.css', ['minify-css']);
   gulp.watch(
     ['./app/**/**/*.+(nunjucks|json)', './app/data/*.json'],
