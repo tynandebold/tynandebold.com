@@ -3,6 +3,10 @@
     @media (min-width: 1650px) {
       @content;
     }
+  } @else if $point == medium-up {
+    @media (min-width: 1220px) {
+      @content;
+    }
   } @else if $point == medium {
     @media (max-width: 1221px) {
       @content;
@@ -15,13 +19,23 @@
 }
 
 body {
+  color: #333;
   display: flex;
   flex-direction: column;
   min-height: calc(100vh - 4em);
-  font-family: 'Source Code Pro', monospace;
+  font-family: "Source Code Pro", "Courier New", Courier, monospace;
   font-size: 100%;
   line-height: 1.5em;
   margin: 2em;
+}
+
+a {
+  color: #00e;
+  transition: color 0.125s ease-out;
+
+  &.active {
+    color: #551a8b;
+  }
 }
 
 /* title styles */
@@ -29,6 +43,7 @@ h1 {
   font-size: 1.5em;
   line-height: 1em;
   margin-bottom: 0.5em;
+  margin-top: 0;
   width: 100%;
 }
 
@@ -46,15 +61,8 @@ nav {
   }
 
   a {
-    color: #0000ee;
-    font-weight: 600;
-    margin-bottom: 0.2em;
+    margin-bottom: 0.1em;
     margin-right: 0.75em;
-    font-size: 1.15em;
-  }
-
-  .active {
-    color: #551a8b;
   }
 }
 
@@ -98,16 +106,10 @@ nav {
       height: 100%;
     }
   }
-
-  .desc-item {
-    a {
-      color: #0000ee;
-    }
-  }
 }
 
 .dev-gallery::after {
-  content: '';
+  content: "";
   margin-right: 378px;
 }
 
@@ -165,19 +167,19 @@ nav {
     margin: 0 0 2em;
     padding-top: 0;
   }
-
-  a {
-    color: #0000ee;
-  }
 }
 
 /* shared text and misc styles */
 .group-title {
   font-weight: 600;
+  margin-bottom: 0.65em;
   text-transform: uppercase;
 
   &:first-of-type {
-    padding-top: 0.25em;
+    @include breakpoint(medium-up) {
+      margin-top: 0;
+      padding-top: 0.125em;
+    }
 
     @include breakpoint(medium) {
       padding-top: 0;
@@ -187,6 +189,7 @@ nav {
 
 .group-desc {
   font-weight: 300;
+  margin: 0;
   margin-bottom: 1em;
 }
 

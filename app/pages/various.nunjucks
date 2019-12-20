@@ -10,9 +10,9 @@
       {% for group, content in various %}
       <h3 class="group-title">{{content.title}}</h3>
       {% if content.title === 'travel' %}
-        <h3 class="group-desc">{{content.desc}} Count: {{content.items | length}}.</h3>
+        <h4 class="group-desc">{{content.desc}} Count: {{content.items | length}}.</h4>
       {% else %}
-        <h3 class="group-desc">{{content.desc}}</h3>
+        <h4 class="group-desc">{{content.desc}}</h4>
       {% endif %}
       <ul>
         {% if content.title === 'travel' %}
