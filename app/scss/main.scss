@@ -23,7 +23,7 @@ body {
   display: flex;
   flex-direction: column;
   min-height: calc(100vh - 4em);
-  font-family: "Source Code Pro", "Courier New", Courier, monospace;
+  font-family: 'Source Code Pro', 'Courier New', Courier, monospace;
   font-size: 100%;
   line-height: 1.5em;
   margin: 2em;
@@ -109,7 +109,7 @@ nav {
 }
 
 .dev-gallery::after {
-  content: "";
+  content: '';
   margin-right: 378px;
 }
 
