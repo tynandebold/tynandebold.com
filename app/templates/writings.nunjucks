@@ -1,0 +1,14 @@
+{% extends "./app/templates/layout.nunjucks" %}
+{% set page = file.frontMatter.title %}
+
+{% block content %}
+
+  {% import './app/templates/macros/nav-macro.nunjucks' as nav %}
+  {{nav.active('')}}
+
+  <div class="about-text">
+    <h3 class="group-title">{{ file.frontMatter.title }}</h3>
+    <i>{{ file.frontMatter.date }}</i>
+    {{ contents | safe }}
+  </div>
+{% endblock %}

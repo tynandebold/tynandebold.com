@@ -4,20 +4,23 @@ var { exec } = require('child_process');
 var cleanCSS = require('gulp-clean-css');
 var data = require('gulp-data');
 var del = require('del');
+var frontMatter = require('gulp-front-matter');
 var fs = require('fs');
 var imagemin = require('gulp-imagemin');
 var livereload = require('gulp-livereload');
+var marked = require('gulp-marked');
 var nunjucks = require('gulp-nunjucks-render');
 var rename = require('gulp-rename');
 var runSeq = require('run-sequence');
 var sass = require('gulp-sass');
 var webserver = require('gulp-webserver');
+var wrap = require('gulp-wrap');
 
 sass.compiler = require('node-sass');
 
 // specific tasks
 gulp.task('default', function() {
-  runSeq('sass', 'nunjucks', 'watch', 'webserver');
+  runSeq('sass', 'nunjucks', 'markdown', 'watch', 'webserver');
 });
 
 gulp.task('build', function() {
@@ -37,6 +40,25 @@ gulp.task('nunjucks', function() {
       nunjucks({
         path: ['./app/templates']
       })
+    )
+    .pipe(gulp.dest('./app'));
+});
+
+gulp.task('markdown', function() {
+  gulp
+    .src('./app/pages/**/*.md')
+    .pipe(frontMatter())
+    .pipe(marked())
+    .pipe(
+      wrap(
+        function(data) {
+          return fs
+            .readFileSync('./app/templates/writings.nunjucks')
+            .toString();
+        },
+        null,
+        { engine: 'nunjucks' }
+      )
     )
     .pipe(gulp.dest('./app'));
 });

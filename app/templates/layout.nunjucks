@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>{{page}} · {{meta.title}}</title>
+  <title>{{page}} · Tynan DeBold</title>
   <link rel="shortcut icon" type="image/x-icon" href="assets/dev/favicon.ico">
   <meta name="description" content="{{meta.long_desc}}">
 	<meta name="keywords" content="{{meta.keywords}}">
