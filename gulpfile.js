@@ -86,8 +86,8 @@ gulp.task('watch', function() {
   gulp.watch('./app/scss/*.scss', ['sass']);
   gulp.watch('./app/css/*.min.css', ['minify-css']);
   gulp.watch(
-    ['./app/**/**/*.+(nunjucks|json)', './app/data/*.json'],
-    ['nunjucks']
+    ['./app/**/**/*.+(nunjucks|json|md)', './app/data/*.json'],
+    ['nunjucks', 'markdown']
   );
 });
 

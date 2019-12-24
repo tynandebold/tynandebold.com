@@ -835,6 +835,10 @@
         {
           "title": "The Circle",
           "link": "https://www.amazon.com/dp/0345807294"
+        },
+        {
+          "title": "Transit",
+          "link": "https://www.amazon.com/dp/1250151791"
         }
       ]
     },
@@ -911,6 +915,24 @@
         "Hong Kong*",
         "South Korea",
         "Japan"
+      ]
+    },
+    "writing": {
+      "title": "writings",
+      "desc": "Some pieces I've penned here and there.",
+      "items": [
+        {
+          "title": "Covered",
+          "link": "./covered.html"
+        },
+        {
+          "title": "Overran",
+          "link": "./overran.html"
+        },
+        {
+          "title": "Moving air",
+          "link": "./moving-air.html"
+        }
       ]
     }
   }
