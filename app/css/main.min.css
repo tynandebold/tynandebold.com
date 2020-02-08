@@ -9,8 +9,7 @@ body {
   margin: 2em; }
 
 a {
-  color: #00e;
-  transition: color 0.125s ease-out; }
+  color: #00e; }
   a.active {
     color: #551a8b; }
 

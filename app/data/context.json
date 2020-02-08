@@ -74,13 +74,13 @@
       "src": "assets/dev/heartland-map.jpg",
       "title": "Journey Through the Heartland",
       "technologies": "D3, GDAL, TopoJSON",
-      "link": "http://www.tynandebold.com/heartland-map/"
+      "link": "https://www.tynandebold.com/heartland-map/"
     },
     {
       "src": "assets/dev/geo-pov.jpg",
       "title": "Geography of Poverty",
       "technologies": "ES6, Gulp, Heroku, Storysmith",
-      "link": "http://www.nbcnews.com/specials/geographyofpoverty-heartland-1"
+      "link": "https://www.nbcnews.com/specials/geographyofpoverty-heartland-1"
     },
     {
       "src": "assets/dev/asylum.jpg",
@@ -92,141 +92,141 @@
       "src": "assets/dev/refugees.jpg",
       "title": "The Global Migrant Crisis",
       "technologies": "ES6, Gulp, Highcharts, lazysizes, lodash, ScrollMagic",
-      "link": "http://www.msnbc.com/specials/migrant-crisis/libya"
+      "link": "https://www.msnbc.com/specials/migrant-crisis/libya"
     },
     {
       "src": "assets/dev/vaccines.jpg",
       "title": "The Impact of Vaccines",
       "technologies": "Excel, Handlebars, Highcharts",
-      "link": "http://graphics.wsj.com/infectious-diseases-and-vaccines/",
-      "award1": "http://community.globaleditorsnetwork.org/content/battling-infectious-diseases-20th-century-impact-vaccines-0",
-      "award2": "http://www.informationisbeautifulawards.com/showcase/660-vaccines-and-infectious-diseases"
+      "link": "https://graphics.wsj.com/infectious-diseases-and-vaccines/",
+      "award1": "https://community.globaleditorsnetwork.org/content/battling-infectious-diseases-20th-century-impact-vaccines-0",
+      "award2": "https://www.informationisbeautifulawards.com/showcase/660-vaccines-and-infectious-diseases"
     },
     {
       "src": "assets/dev/nbc-jobs-site.jpg",
       "title": "NBC News Digital Careers",
       "technologies": "Flexbox, JavaScript, Tumblr",
-      "link": "http://nbcnewsdigitaljobs.com/"
+      "link": "https://nbcnewsdigitaljobs.com/"
     },
     {
       "src": "assets/dev/zika.jpg",
       "title": "Zika: Year 1",
       "technologies": "Flexbox, ES6, Swiper",
-      "link": "http://www.nbcnews.com/specials/zika-year-1"
+      "link": "https://www.nbcnews.com/specials/zika-year-1"
     },
     {
       "src": "assets/dev/cafe-disco.jpg",
       "title": "Cafe Disco",
       "technologies": "CSS3, Flexbox, jQuery, Web Font Loader",
-      "link": "http://www.tynandebold.com/cafe-disco/"
+      "link": "https://www.tynandebold.com/cafe-disco/"
     },
     {
       "src": "assets/dev/calendar.jpg",
       "title": "2017 Linear Calendar",
       "technologies": "D3, ES6, Flexbox, webpack",
-      "link": "http://www.tynandebold.com/linear-calendar/"
+      "link": "https://www.tynandebold.com/linear-calendar/"
     },
     {
       "src": "assets/dev/favicon.jpg",
       "title": "Favicon Builder",
       "technologies": "ES6, Flexbox, Node.js, webpack",
-      "link": "http://www.tynandebold.com/favicon-builder/"
+      "link": "https://www.tynandebold.com/favicon-builder/"
     },
     {
       "src": "assets/dev/super.jpg",
       "title": "Super Duper",
       "technologies": "ES6, Flexbox, Node.js, webpack",
-      "link": "http://www.tynandebold.com/super-duper/"
+      "link": "https://www.tynandebold.com/super-duper/"
     },
     {
       "src": "assets/dev/wsj.jpg",
       "title": "Three Years of Print",
       "technologies": "CSS3, Vue.js. WSJ graphics created in Illustrator.",
-      "link": "http://www.tynandebold.com/wsj-print-graphics/"
+      "link": "https://www.tynandebold.com/wsj-print-graphics/"
     },
     {
       "src": "assets/dev/danielhuang.jpg",
       "title": "danielhuang.info",
       "technologies": "CSS3, Flexbox, Web Font Loader",
-      "link": "http://www.tynandebold.com/danielhuang/"
+      "link": "https://www.tynandebold.com/danielhuang/"
     },
     {
       "src": "assets/dev/tawnysaez.jpg",
       "title": "tawnysaez.com",
       "technologies": "Flexbox, Jekyll, Liquid, YAML",
-      "link": "http://www.tawnysaez.com/"
+      "link": "https://tynandebold.com/tawnysaez.com/"
     },
     {
       "src": "assets/dev/this-was-home.jpg",
       "title": "ThisWasHome.",
       "technologies": "Google Street View Image API, jQuery, Skeleton",
-      "link": "http://www.tynandebold.com/ThisWasHome/"
+      "link": "https://www.tynandebold.com/ThisWasHome/"
     },
     {
       "src": "assets/dev/india.jpg",
       "title": "India's Great Parcel Race",
       "technologies": "Handlebars, Waypoints",
-      "link": "http://graphics.wsj.com/indias-great-parcel-race/"
+      "link": "https://graphics.wsj.com/indias-great-parcel-race/"
     },
     {
       "src": "assets/dev/1mdb.jpg",
       "title": "1MDB Decoded",
       "technologies": "Compass, Handlebars, lodash",
-      "link": "http://graphics.wsj.com/1mdb-decoded/"
+      "link": "https://graphics.wsj.com/1mdb-decoded/"
     },
     {
       "src": "assets/dev/mi-charts.jpg",
       "title": "Markets/Finance Year in Charts",
       "technologies": "Custom Font, Excel, Handlebars, Highcharts, Moment",
-      "link": "http://graphics.wsj.com/markets-and-finance-year-in-charts/"
+      "link": "https://graphics.wsj.com/markets-and-finance-year-in-charts/"
     },
     {
       "src": "assets/dev/carousel.jpg",
       "title": "Newsroom Tool: Embeddable Carousel",
       "technologies": "bxSlider, Handlebars, jQuery UI, PHP",
-      "link": "http://graphics.wsj.com/embeddable-carousel/?slug=joko-widodo-in-office"
+      "link": "https://graphics.wsj.com/embeddable-carousel/?slug=joko-widodo-in-office"
     },
     {
       "src": "assets/dev/chart1.jpg",
       "title": "China's Copper Trading",
       "technologies": "Excel, Illustrator",
-      "link": "http://si.wsj.net/public/resources/images/OJ-AB298A_CCOPP_11U_20151018121511.jpg"
+      "link": "https://si.wsj.net/public/resources/images/OJ-AB298A_CCOPP_11U_20151018121511.jpg"
     },
     {
       "src": "assets/dev/chart2.jpg",
       "title": "Li Ka-shing Selling Assets",
       "technologies": "Excel, Illustrator",
-      "link": "http://si.wsj.net/public/resources/images/AM-BK674_HKTYCO_16U_20150906111213.jpg"
+      "link": "https://si.wsj.net/public/resources/images/AM-BK674_HKTYCO_16U_20150906111213.jpg"
     },
     {
       "src": "assets/dev/scraping.jpg",
       "title": "Web Scraping: WSJ Clips",
       "technologies": "jQuery, Node, x-ray",
-      "link": "http://www.tynandebold.com/scraping/"
+      "link": "https://www.tynandebold.com/scraping/"
     },
     {
       "src": "assets/dev/singapores-rise.jpg",
       "title": "Singapore's 50 Years of Independence",
       "technologies": "Bootstrap, Handlebars, Highcharts, slick",
-      "link": "http://graphics.wsj.com/singapore-50th-anniversary/"
+      "link": "https://graphics.wsj.com/singapore-50th-anniversary/"
     },
     {
       "src": "assets/dev/cali.jpg",
       "title": "California's Challenge With Drought",
       "technologies": "D3, Topojson",
-      "link": "http://graphics.wsj.com/californias-long-challenge-with-drought/"
+      "link": "https://graphics.wsj.com/californias-long-challenge-with-drought/"
     },
     {
       "src": "assets/dev/world-water.jpg",
       "title": "World Water and Sanitation",
       "technologies": "Bootstrap, D3, Excel, jQuery, lodash, TopoJSON",
-      "link": "http://graphics.wsj.com/world-water-and-sanitation/"
+      "link": "https://graphics.wsj.com/world-water-and-sanitation/"
     },
     {
       "src": "assets/dev/obama-budget.jpg",
       "title": "Obama’s 2016 Budget",
       "technologies": "Bootstrap, Excel, Handlebars, Highcharts, lodash, Moment",
-      "link": "http://graphics.wsj.com/obamas-2016-budget-behind-the-numbers/"
+      "link": "https://graphics.wsj.com/obamas-2016-budget-behind-the-numbers/"
     }
   ],
   "photo_groups": {
