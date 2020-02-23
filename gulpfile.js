@@ -117,7 +117,8 @@ gulp.task('move', function() {
         './app/assets/dev/**/*',
         './app/css/*.min.css',
         './app/*.html',
-        './app/js/*.js'
+        './app/js/*.js',
+        './app/fonts/*'
       ],
       { base: 'app' }
     )

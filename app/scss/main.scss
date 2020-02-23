@@ -1,3 +1,28 @@
+@font-face {
+  font-family: 'Source Code Pro';
+  font-style: normal;
+  font-weight: 300;
+  src: local('Source Code Pro Light'), local('SourceCodePro-Light'),
+    url('../fonts/source-code-pro-v11-latin-300.woff2') format('woff2'),
+    url('../fonts/source-code-pro-v11-latin-300.woff') format('woff');
+}
+@font-face {
+  font-family: 'Source Code Pro';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Source Code Pro Regular'), local('SourceCodePro-Regular'),
+    url('../fonts/source-code-pro-v11-latin-regular.woff2') format('woff2'),
+    url('../fonts/source-code-pro-v11-latin-regular.woff') format('woff');
+}
+@font-face {
+  font-family: 'Source Code Pro';
+  font-style: normal;
+  font-weight: 600;
+  src: local('Source Code Pro SemiBold'), local('SourceCodePro-SemiBold'),
+    url('../fonts/source-code-pro-v11-latin-600.woff2') format('woff2'),
+    url('../fonts/source-code-pro-v11-latin-600.woff') format('woff');
+}
+
 @mixin breakpoint($point) {
   @if $point == large {
     @media (min-width: 1650px) {
