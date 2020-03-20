@@ -5,6 +5,18 @@
   },
   "dev_items": [
     {
+      "src": "assets/dev/tiffanyhongdesign.png",
+      "title": "Tiffany Hong Design",
+      "technologies": "ES5, Flickity, Gulp, SCSS, Netlify",
+      "link": "https://www.tiffanyhongdesign.com/"
+    },
+    {
+      "src": "assets/dev/wsj-admin-tools-style-guide.jpg",
+      "title": "WSJ Admin Tools Style Guide",
+      "technologies": "Express, Nunjucks, jQuery, Prism.js, SCSS, Heroku",
+      "link": "https://wsj-admin-tools-style-guide.herokuapp.com/"
+    },
+    {
       "src": "assets/dev/aagaard-design-studio.jpg",
       "title": "Aagaard Design Studio",
       "technologies": "Contentful, Gatsby.js, Netlify",
@@ -845,7 +857,7 @@
           "link": "https://www.amazon.com/dp/0525562028"
         },
         {
-          "title": "Siddartha",
+          "title": "Siddhartha",
           "link": "https://www.amazon.com/dp/0553208845"
         }
       ]
