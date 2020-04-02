@@ -24,7 +24,7 @@ gulp.task('default', function() {
 });
 
 gulp.task('build', function() {
-  runSeq('nunjucks', 'responsive', 'move', 'copy');
+  runSeq('nunjucks', 'responsive', 'move', 'pull-copy-push');
 });
 
 // get data; run nunjucks to compile static html files
@@ -125,8 +125,8 @@ gulp.task('move', function() {
     .pipe(gulp.dest('./build'));
 });
 
-gulp.task('copy', function() {
-  exec('cp -r ./build/ ~/sites/tynandebold.github.io/', function(error) {
+gulp.task('pull-copy-push', function() {
+  exec('sh build.sh', function(error) {
     if (error) {
       console.error('exec error: ', error);
       return;

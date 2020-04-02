@@ -5,6 +5,12 @@
   },
   "dev_items": [
     {
+      "src": "assets/dev/spanish-flashcards.png",
+      "title": "Spanish Flashcards",
+      "technologies": "Vue.js",
+      "link": "https://www.tynandebold.com/spanish-flashcards"
+    },
+    {
       "src": "assets/dev/tiffanyhongdesign.png",
       "title": "Tiffany Hong Design",
       "technologies": "ES5, Flickity, Gulp, SCSS, Netlify",
