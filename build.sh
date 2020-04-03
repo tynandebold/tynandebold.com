@@ -1,14 +1,15 @@
 #!/bin/bash
 
-SOURCE_DIR=~/sites/tynandebold.com/
-IO_DIR=~/sites/tynandebold.github.io/
+SOURCE_DIR=~/sites/tynandebold.com
+IO_DIR=~/sites/tynandebold.github.io
 
 cd $IO_DIR
+git stash
 git pull
-cd $SOURCE_DIR
-cp -r ./build/ $IO_DIR
+git stash pop
+cp -r $SOURCE_DIR/build/ $IO_DIR
 if [[ $(git status -s) ]]; then
-  git add .
-  git commit -m "update"
+  ga
+  gcam "update"
   git push
 fi
