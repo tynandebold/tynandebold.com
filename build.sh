@@ -9,7 +9,7 @@ git pull
 git stash pop
 cp -r $SOURCE_DIR/build/ $IO_DIR
 if [[ $(git status -s) ]]; then
-  ga
-  gcam "update"
+  git add
+  git commit -am "update"
   git push
 fi

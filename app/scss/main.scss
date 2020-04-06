@@ -44,6 +44,7 @@
 }
 
 body {
+  background-color: #eaeaea;
   color: #333;
   display: flex;
   flex-direction: column;
@@ -126,8 +127,18 @@ nav {
     margin-bottom: 0.35em;
 
     img {
+      border: 0.165em solid #fff;
+      box-sizing: border-box;
+      height: 256px;
       width: 100%;
-      height: 100%;
+
+      @include breakpoint(large) {
+        height: 382px;
+      }
+
+      @include breakpoint(medium) {
+        height: 100%;
+      }
     }
   }
 }
