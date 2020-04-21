@@ -10,7 +10,10 @@
   <link rel="stylesheet" href="css/main.min.css">
 </head>
 <body>
-  <main>{% block content %} {% endblock %}</main>
+  <main>
+    {%- block content %}
+    {% endblock %}
+  </main>
   <footer>
     <p>–<br>© Tynan DeBold <span id="year"></span></p>
   </footer>

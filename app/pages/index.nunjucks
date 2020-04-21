@@ -1,13 +1,12 @@
 {% extends "layout.nunjucks" %}
 {% set page = "Work" %}
 
-{% block content %}
-
+{% block content -%}
   {% import 'macros/nav-macro.nunjucks' as nav %}
   {{nav.active('dev')}}
 
   <div class="dev-gallery">
-    {% for dev_item in dev_items %}
+    {%- for dev_item in dev_items %}
     <div class="gallery-item">
       <div class="gallery-img-wrapper">
         <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="{{dev_item.src}}" alt="{{dev_item.title}}" class="lazyload" />

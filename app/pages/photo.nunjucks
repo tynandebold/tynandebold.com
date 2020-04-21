@@ -1,13 +1,11 @@
 {% extends "layout.nunjucks" %}
 {% set page = "Photo" %}
 
-{% block content %}
-
+{% block content -%}
   {% import 'macros/nav-macro.nunjucks' as nav %}
   {{nav.active('photo')}}
-
     <div class="photo-gallery">
-      {% for group, content in photo_groups %}
+      {%- for group, content in photo_groups %}
       <h3 class="group-title">{{content.title}}</h3>
       <h4 class="group-desc">{{content.desc}}</h4>
         {% for photo in content.photos %}
@@ -18,7 +16,6 @@
           <div class="caption">{{photo.caption}}</div>
         </div>
         {% endfor %}
-      {% endfor %}
+      {%- endfor %}
     </div>
-
 {% endblock %}

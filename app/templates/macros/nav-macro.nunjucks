@@ -1,4 +1,4 @@
-{% macro active(activePage='dev') %}
+{%- macro active(activePage='dev') -%}
   <nav>
     <h1>Tynan DeBold</h1>
     <a href="/" class="{%if activePage == 'dev' %}active{% endif %}">Work</a>
@@ -12,4 +12,4 @@
       Access the Webring
     </a>
   </nav>
-{% endmacro %}
+{%- endmacro -%}
