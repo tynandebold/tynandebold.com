@@ -19,39 +19,39 @@ var wrap = require('gulp-wrap');
 sass.compiler = require('node-sass');
 
 // specific tasks
-gulp.task('default', function() {
+gulp.task('default', function () {
   runSeq('sass', 'nunjucks', 'markdown', 'watch', 'webserver');
 });
 
-gulp.task('build', function() {
+gulp.task('build', function () {
   runSeq('nunjucks', 'responsive', 'move', 'pull-copy-push');
 });
 
 // get data; run nunjucks to compile static html files
-gulp.task('nunjucks', function() {
+gulp.task('nunjucks', function () {
   return gulp
     .src('./app/pages/**/*.nunjucks')
     .pipe(
-      data(function() {
+      data(function () {
         return JSON.parse(fs.readFileSync('./app/data/context.json'));
       })
     )
     .pipe(
       nunjucks({
-        path: ['./app/templates']
+        path: ['./app/templates'],
       })
     )
     .pipe(gulp.dest('./app'));
 });
 
-gulp.task('markdown', function() {
+gulp.task('markdown', function () {
   gulp
     .src('./app/pages/**/*.md')
     .pipe(frontMatter())
     .pipe(marked())
     .pipe(
       wrap(
-        function(data) {
+        function (data) {
           return fs
             .readFileSync('./app/templates/writings.nunjucks')
             .toString();
@@ -64,7 +64,7 @@ gulp.task('markdown', function() {
 });
 
 // compile sass file(s)
-gulp.task('sass', function() {
+gulp.task('sass', function () {
   return gulp
     .src('./app/scss/*.scss')
     .pipe(sass().on('error', sass.logError))
@@ -73,7 +73,7 @@ gulp.task('sass', function() {
 });
 
 // minify css
-gulp.task('minify-css', function() {
+gulp.task('minify-css', function () {
   return gulp
     .src('./app/css/*.min.css')
     .pipe(cleanCSS())
@@ -81,7 +81,7 @@ gulp.task('minify-css', function() {
 });
 
 // watch files for changes
-gulp.task('watch', function() {
+gulp.task('watch', function () {
   livereload.listen();
   gulp.watch('./app/scss/*.scss', ['sass']);
   gulp.watch('./app/css/*.min.css', ['minify-css']);
@@ -92,16 +92,36 @@ gulp.task('watch', function() {
 });
 
 // run a local server
-gulp.task('webserver', function() {
+gulp.task('webserver', function () {
   return gulp.src('./app/').pipe(
     webserver({
-      open: true
+      open: true,
+      middleware: function (req, res, next) {
+        // ignore these things
+        if (
+          req.url.includes('assets') ||
+          req.url.includes('css') ||
+          req.url.includes('js') ||
+          req.url.includes('fonts')
+        ) {
+          next();
+          return;
+        }
+
+        if (req.url === '/') {
+          req.url = '/index';
+        }
+
+        var url = req.url + '.html';
+        req.url = url;
+        next();
+      },
     })
   );
 });
 
 // image optimization
-gulp.task('responsive', function() {
+gulp.task('responsive', function () {
   del('./build/**/*');
   return gulp
     .src('./app/assets/photo/**/*.jpg')
@@ -110,7 +130,7 @@ gulp.task('responsive', function() {
 });
 
 // move necessary files to build dir
-gulp.task('move', function() {
+gulp.task('move', function () {
   return gulp
     .src(
       [
@@ -118,15 +138,15 @@ gulp.task('move', function() {
         './app/css/*.min.css',
         './app/*.html',
         './app/js/*.js',
-        './app/fonts/*'
+        './app/fonts/*',
       ],
       { base: 'app' }
     )
     .pipe(gulp.dest('./build'));
 });
 
-gulp.task('pull-copy-push', function() {
-  exec('sh build.sh', function(error) {
+gulp.task('pull-copy-push', function () {
+  exec('sh build.sh', function (error) {
     if (error) {
       console.error('exec error: ', error);
       return;
