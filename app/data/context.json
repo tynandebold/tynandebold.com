@@ -783,6 +783,10 @@
           "link": "https://www.amazon.com/dp/0385494785"
         },
         {
+          "title": "Barbarian Days: A Surfing Life",
+          "link": "https://www.amazon.com/dp/0143109391"
+        },
+        {
           "title": "Founding Brothers",
           "link": "https://www.amazon.com/dp/0375705244"
         },
@@ -839,6 +843,14 @@
           "link": "https://www.amazon.com/dp/0914671995"
         },
         {
+          "title": "The Shadow of the Sun",
+          "link": "https://www.amazon.com/dp/0679779078"
+        },
+        {
+          "title": "We Wish to Inform You That Tomorrow We Will Be Killed with Our Families",
+          "link": "https://www.amazon.com/dp/0312243359"
+        },
+        {
           "title": "Outline",
           "link": "https://www.amazon.com/dp/1250081548"
         },
@@ -873,6 +885,10 @@
         {
           "title": "If Beale Street Could Talk",
           "link": "https://www.amazon.com/dp/0307275930"
+        },
+        {
+          "title": "Pigeon Feathers and Other Stories",
+          "link": "https://www.amazon.com/dp/0449912256"
         }
       ]
     },
@@ -911,12 +927,66 @@
         {
           "title": "Boiler Room Berlin Live Set - David August",
           "link": "https://soundcloud.com/platform/david-august"
+        },
+        {
+          "title": "Batuka / Se A Cabo (8/18/1970) - Santana",
+          "link": "https://www.youtube.com/watch?v=toFsJHbLJSw"
+        },
+        {
+          "title": "Fake Fealty - Balmorhea",
+          "link": "https://vimeo.com/33293128"
+        },
+        {
+          "title": "songs, ideas, we forget - toe",
+          "link": "https://open.spotify.com/album/7McycROVPW940A7puAvqrB?si=1Uw6IYSVRK2RaF_Y9FS4_g"
+        },
+        {
+          "title": "music for programming",
+          "link": "https://musicforprogramming.net/?one"
+        },
+        {
+          "title": "5150 (live) - Van Halen",
+          "link": "https://www.youtube.com/watch?v=HB8vp5R6Vmk"
+        }
+      ]
+    },
+    "miscellaneous": {
+      "title": "miscellaneous",
+      "desc": "Other fascinations.",
+      "items": [
+        {
+          "title": "Kicks Condor",
+          "link": "https://www.kickscondor.com/"
+        },
+        {
+          "title": "Typing practice",
+          "link": "https://www.keybr.com/"
+        },
+        {
+          "title": "Gwern.net",
+          "link": "https://www.gwern.net/index"
+        },
+        {
+          "title": "Numbers and monitoring of COVID-19 (Denmark)",
+          "link": "https://www.sst.dk/da/corona/tal-og-overvaagning"
+        },
+        {
+          "title": "ongoing by Tim Bray",
+          "link": "https://www.tbray.org/ongoing/"
+        },
+        {
+          "title": "Windy: Compare GFS, ECMWF, NEMS",
+          "link": "https://www.windy.com/multimodel/55.678/12.522?radar,55.590,12.522,10"
+        },
+        {
+          "title": "Flightradar24",
+          "link": "https://www.flightradar24.com/"
         }
       ]
     },
     "travel": {
       "title": "travel",
-      "desc": "All of the countries I've been lucky enough to visit over the course of my life. * = places lived.",
+      "desc": "All of the countries I've been lucky enough to visit over the course of my life. * denotes places lived.",
       "items": [
         "United States*",
         "Canada",
@@ -957,15 +1027,15 @@
       "items": [
         {
           "title": "Covered",
-          "link": "./covered.html"
+          "link": "./covered"
         },
         {
           "title": "Overran",
-          "link": "./overran.html"
+          "link": "./overran"
         },
         {
           "title": "Moving air",
-          "link": "./moving-air.html"
+          "link": "./moving-air"
         }
       ]
     }
