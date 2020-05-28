@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <title>{{page}} · Tynan DeBold</title>
   <link rel="shortcut icon" type="image/x-icon" href="assets/dev/favicon.ico">
-  <meta name="description" content="{{meta.long_desc}}">
+  <meta name="description" content="{{meta.longDesc}}">
 	<meta name="keywords" content="{{meta.keywords}}">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="css/main.min.css">
@@ -22,7 +22,7 @@
     window.lazySizesConfig = window.lazySizesConfig || {};
     window.lazySizesConfig.expand = 300;
 
-    document.getElementById('year').innerHTML = new Date().getFullYear();
+    document.getElementById('year').innerHTML = '2010-' + new Date().getFullYear();
 
     document.querySelector('body').addEventListener('dblclick', function() {
       document.querySelector('body').style.background = 'black';

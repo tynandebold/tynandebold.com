@@ -6,21 +6,22 @@
   {{nav.active('dev')}}
 
   <div class="dev-gallery">
-    {%- for dev_item in dev_items %}
+    {%- for devItem in devItems %}
     <div class="gallery-item">
       <div class="gallery-img-wrapper">
-        <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="{{dev_item.src}}" alt="{{dev_item.title}}" class="lazyload" />
+        <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="{{devItem.src}}" alt="{{devItem.title}}" class="lazyload" />
       </div>
-      <div class="proj-title desc-item">
-        <a class="proj-link" href="{{dev_item.link}}" target="_blank" rel="noopener">{{dev_item.title}}</a>
+      <div>
+        <a href="{{devItem.link}}" target="_blank" rel="noopener">{{devItem.title}}</a>
       </div>
-      <div class="proj-tech desc-item">Tech: {{dev_item.technologies}}</div>
-      {% if dev_item.award1 %}
-        <div class="proj-awards desc-item">Awards:
-          <a href="{{dev_item.award1}}" target="_blank" rel="noopener">GEN</a> &
-          <a href="{{dev_item.award2}}" target="_blank" rel="noopener">IIB</a>
+      <div>Tech: {{devItem.technologies}}</div>
+      {%- if devItem.moreInfo %}
+        <div class="more-info-wrapper">More info:
+          {%- for moreInfoObj in devItem.moreInfo %}
+            <a href="{{moreInfoObj.source}}" target="_blank" rel="noopener">{{moreInfoObj.text}}</a>{% if not loop.last %}, {% endif -%}
+          {%- endfor %}
         </div>
-      {% endif %}
+      {%- endif %}
     </div>
     {% endfor %}
   </div>

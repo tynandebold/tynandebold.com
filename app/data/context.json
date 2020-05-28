@@ -1,9 +1,21 @@
 {
   "meta": {
-    "long_desc": "Software engineer and award-winning multimedia and graphics editor with extensive experience in engineering and newsroom settings. Well versed in hands-on conceptualization, management and execution of technically-driven initiatives and editorial content.",
+    "longDesc": "Software engineer and award-winning multimedia and graphics editor with extensive experience in engineering and newsroom settings. Well versed in hands-on conceptualization, management and execution of technically-driven initiatives and editorial content.",
     "keywords": "tynan debold, tynandebold, tynan, debold, developer, interactive developer, data visualization, data viz, dataviz, front-end developer, software engineer, frontend engineer, photography, photographer, the wall street journal, wsj, msnbc, msnbc.com, nbc, media, journalism"
   },
-  "dev_items": [
+  "devItems": [
+    {
+      "src": "assets/dev/dfds-direct.jpg",
+      "title": "DFDS Direct",
+      "technologies": "TypeScript, Gatsby, GraphQL, Emotion, Contentful, Apollo, AWS (Lambda, DynamoDB), Azure Pipelines",
+      "link": "https://www.dfds.com/en/logistics-solutions/book-and-track-online/direct",
+      "moreInfo": [
+        {
+          "text": "News item",
+          "source": "https://www.dfds.com/en/about/media/news/new-online-booking-service-dfds-direct"
+        }
+      ]
+    },
     {
       "src": "assets/dev/spanish-flashcards.png",
       "title": "Spanish Flashcards",
@@ -117,8 +129,16 @@
       "title": "The Impact of Vaccines",
       "technologies": "Excel, Handlebars, Highcharts",
       "link": "https://graphics.wsj.com/infectious-diseases-and-vaccines/",
-      "award1": "https://community.globaleditorsnetwork.org/content/battling-infectious-diseases-20th-century-impact-vaccines-0",
-      "award2": "https://www.informationisbeautifulawards.com/showcase/660-vaccines-and-infectious-diseases"
+      "moreInfo": [
+        {
+          "text": "GEN award",
+          "source": "https://www.globaleditorsnetwork.org/programmes/data-journalism-awards/dja-2015/"
+        },
+        {
+          "text": "IIB award",
+          "source": "https://www.informationisbeautifulawards.com/showcase/660-vaccines-and-infectious-diseases"
+        }
+      ]
     },
     {
       "src": "assets/dev/nbc-jobs-site.jpg",
@@ -247,7 +267,7 @@
       "link": "https://graphics.wsj.com/obamas-2016-budget-behind-the-numbers/"
     }
   ],
-  "photo_groups": {
+  "photoGroups": {
     "people": {
       "title": "people",
       "desc": "A look at humans.",
@@ -488,134 +508,134 @@
         }
       ]
     },
-    "in_between": {
+    "inBetween": {
       "title": "in between",
       "desc": "Neither them or there.",
       "photos": [
         {
-          "src": "assets/photo/in_between/1.jpg",
+          "src": "assets/photo/inBetween/1.jpg",
           "caption": "asheville, north carolina"
         },
         {
-          "src": "assets/photo/in_between/2.jpg",
+          "src": "assets/photo/inBetween/2.jpg",
           "caption": "devner, colorado"
         },
         {
-          "src": "assets/photo/in_between/3.jpg",
+          "src": "assets/photo/inBetween/3.jpg",
           "caption": "kyoto, japan"
         },
         {
-          "src": "assets/photo/in_between/4.jpg",
+          "src": "assets/photo/inBetween/4.jpg",
           "caption": "denver, colorado"
         },
         {
-          "src": "assets/photo/in_between/5.jpg",
+          "src": "assets/photo/inBetween/5.jpg",
           "caption": "new york"
         },
         {
-          "src": "assets/photo/in_between/6.jpg",
+          "src": "assets/photo/inBetween/6.jpg",
           "caption": "los angeles"
         },
         {
-          "src": "assets/photo/in_between/7.jpg",
+          "src": "assets/photo/inBetween/7.jpg",
           "caption": "chichester, new hampshire"
         },
         {
-          "src": "assets/photo/in_between/8.jpg",
+          "src": "assets/photo/inBetween/8.jpg",
           "caption": "ito, japan"
         },
         {
-          "src": "assets/photo/in_between/9.jpg",
+          "src": "assets/photo/inBetween/9.jpg",
           "caption": "hong kong"
         },
         {
-          "src": "assets/photo/in_between/10.jpg",
+          "src": "assets/photo/inBetween/10.jpg",
           "caption": "new york"
         },
         {
-          "src": "assets/photo/in_between/11.jpg",
+          "src": "assets/photo/inBetween/11.jpg",
           "caption": "new york"
         },
         {
-          "src": "assets/photo/in_between/12.jpg",
+          "src": "assets/photo/inBetween/12.jpg",
           "caption": "new hampshire"
         },
         {
-          "src": "assets/photo/in_between/13.jpg",
+          "src": "assets/photo/inBetween/13.jpg",
           "caption": "costa rica"
         }
       ]
     }
   },
-  "series_groups": {
-    "on_deck": {
+  "seriesGroups": {
+    "onDeck": {
       "title": "on deck",
       "desc": "A small place of apprehension and preparation.",
       "photos": [
         {
-          "src": "assets/photo/on_deck/1.jpg",
+          "src": "assets/photo/onDeck/1.jpg",
           "caption": "1"
         },
         {
-          "src": "assets/photo/on_deck/2.jpg",
+          "src": "assets/photo/onDeck/2.jpg",
           "caption": "2"
         },
         {
-          "src": "assets/photo/on_deck/3.jpg",
+          "src": "assets/photo/onDeck/3.jpg",
           "caption": "3"
         },
         {
-          "src": "assets/photo/on_deck/4.jpg",
+          "src": "assets/photo/onDeck/4.jpg",
           "caption": "4"
         },
         {
-          "src": "assets/photo/on_deck/5.jpg",
+          "src": "assets/photo/onDeck/5.jpg",
           "caption": "5"
         },
         {
-          "src": "assets/photo/on_deck/6.jpg",
+          "src": "assets/photo/onDeck/6.jpg",
           "caption": "6"
         },
         {
-          "src": "assets/photo/on_deck/7.jpg",
+          "src": "assets/photo/onDeck/7.jpg",
           "caption": "7"
         }
       ]
     },
-    "pier_couples": {
+    "pierCouples": {
       "title": "shared perspective",
       "desc": "Two individuals together watching one star.",
       "photos": [
         {
-          "src": "assets/photo/pier_couples/1.jpg",
+          "src": "assets/photo/pierCouples/1.jpg",
           "caption": "1"
         },
         {
-          "src": "assets/photo/pier_couples/2.jpg",
+          "src": "assets/photo/pierCouples/2.jpg",
           "caption": "2"
         },
         {
-          "src": "assets/photo/pier_couples/3.jpg",
+          "src": "assets/photo/pierCouples/3.jpg",
           "caption": "3"
         },
         {
-          "src": "assets/photo/pier_couples/4.jpg",
+          "src": "assets/photo/pierCouples/4.jpg",
           "caption": "4"
         },
         {
-          "src": "assets/photo/pier_couples/5.jpg",
+          "src": "assets/photo/pierCouples/5.jpg",
           "caption": "5"
         },
         {
-          "src": "assets/photo/pier_couples/6.jpg",
+          "src": "assets/photo/pierCouples/6.jpg",
           "caption": "6"
         },
         {
-          "src": "assets/photo/pier_couples/7.jpg",
+          "src": "assets/photo/pierCouples/7.jpg",
           "caption": "7"
         },
         {
-          "src": "assets/photo/pier_couples/8.jpg",
+          "src": "assets/photo/pierCouples/8.jpg",
           "caption": "8"
         }
       ]

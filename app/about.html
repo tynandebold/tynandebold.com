@@ -50,7 +50,7 @@
     window.lazySizesConfig = window.lazySizesConfig || {};
     window.lazySizesConfig.expand = 300;
 
-    document.getElementById('year').innerHTML = new Date().getFullYear();
+    document.getElementById('year').innerHTML = '2010-' + new Date().getFullYear();
 
     document.querySelector('body').addEventListener('dblclick', function() {
       document.querySelector('body').style.background = 'black';
