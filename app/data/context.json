@@ -11,6 +11,10 @@
       "link": "https://www.dfds.com/en/logistics-solutions/book-and-track-online/direct",
       "moreInfo": [
         {
+          "text": "Demo video",
+          "source": "https://tynandebold.s3.us-east-2.amazonaws.com/dfds.mp4"
+        },
+        {
           "text": "News item",
           "source": "https://www.dfds.com/en/about/media/news/new-online-booking-service-dfds-direct"
         }
