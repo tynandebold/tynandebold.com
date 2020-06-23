@@ -1,20 +1,22 @@
 ---
 title: Covered
 date: August 2014
+parseDate: August 2014 GMT+0000
+url: https://tynandebold.com/covered
 ---
 
-Through revolving doors</br>
+<p>Through revolving doors</br>
 We walk each night</br>
-Matching minutes
+Matching minutes</p>
 
-The overlay of the sky</br>
+<p>The overlay of the sky</br>
 Grows dark, dark,</br>
-Darker
+Darker<p>
 
-Down the stairs, light</br>
+<p>Down the stairs, light</br>
 Follows me, but up</br>
-I’m greeted by black
+I’m greeted by black<p>
 
-I add a layer each night</br>
+<p>I add a layer each night</br>
 With greater weight</br>
-I'm covered
+I'm covered</p>

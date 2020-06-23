@@ -146,7 +146,9 @@ gulp.task('move', function () {
 });
 
 gulp.task('pull-copy-push', function () {
-  exec('sh build.sh', function (error) {
+  exec('mkdir ./build/feeds && node generate-rss.js && sh build.sh', function (
+    error
+  ) {
     if (error) {
       console.error('exec error: ', error);
       return;
