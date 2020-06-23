@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Defund · Tynan DeBold</title>
+  <link rel="shortcut icon" type="image/x-icon" href="assets/dev/favicon.ico">
+  <meta name="description" content="">
+	<meta name="keywords" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/main.min.css">
+</head>
+<body>
+  <main>
+
+  
+  <nav>
+    <h1>Tynan DeBold</h1>
+    <a href="/" class="">Work</a>
+    <a href="/photo" class="">Photo</a>
+    <a href="/series" class="">Series</a>
+    <a href="/various" class="">Various</a>
+    <a href="https://tynandebold.tumblr.com" target="_blank" rel="noopener" class="">Blog</a>
+    <a href="/about" class="">About</a>
+    <a href="https://webring.xxiivv.com/#random" target="_blank" rel="noopener" class="webring-link" style="font-size: 0;">
+      <img src='https://webring.xxiivv.com/icon.black.svg' style="width: 26px;" alt="Icon for the webring link"/>
+      Access the Webring
+    </a>
+  </nav>
+
+  <div class="about-text">
+    <h3 class="group-title">Defund</h3>
+    <i>June 2020</i>
+    <p>Defund !== disband, meaning defund the police doesn&#39;t equal disband the police.</p>
+
+<p>Defund seems to be a very poor verb choice here. Why not use reform, rethink, redo, revamp, or rectify? Perhaps the word <i>improve</i> could be used more during these discussions, too.
+</p>
+
+  </div>
+
+  </main>
+  <footer>
+    <p>–<br>© Tynan DeBold <span id="year"></span></p>
+  </footer>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/lazysizes/5.2.0/lazysizes.min.js"></script>
+  <script>
+    window.lazySizesConfig = window.lazySizesConfig || {};
+    window.lazySizesConfig.expand = 300;
+
+    document.getElementById('year').innerHTML = '2010-' + new Date().getFullYear();
+
+    document.querySelector('body').addEventListener('dblclick', function() {
+      document.querySelector('body').style.background = 'black';
+      document.querySelector('body').style.color = 'white';
+      document.querySelectorAll('a').forEach(function(item) {
+        item.style.color = '#8e8eff'
+      });
+      document.querySelector('a.active').style.color = '#c07aff';
+    });
+
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-81744557-1', 'auto');
+    ga('send', 'pageview');
+  </script>
+</body>
+</html>

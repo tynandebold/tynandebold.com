@@ -1058,6 +1058,10 @@
       "desc": "Some pieces I've penned here and there.",
       "items": [
         {
+          "title": "Defund",
+          "link": "./defund"
+        },
+        {
           "title": "Covered",
           "link": "./covered"
         },
