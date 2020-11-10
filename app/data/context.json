@@ -5,6 +5,12 @@
   },
   "devItems": [
     {
+      "src": "assets/dev/user-stats-ct-website.png",
+      "title": "User stats page, CharlieTango.dk",
+      "technologies": "Google Firebase (Cloud Firestore and Functions), Next.js, TypeScript",
+      "link": "./assets/dev/user-stats-ct-website.png"
+    },
+    {
       "src": "assets/dev/dfds-direct.jpg",
       "title": "DFDS Direct",
       "technologies": "TypeScript, Gatsby, GraphQL, Emotion, Contentful, Apollo, AWS (Lambda, DynamoDB), Azure Pipelines",
