@@ -150,7 +150,8 @@ nav {
 }
 
 /* photo gallery styles */
-.photo-gallery {
+.photo-gallery,
+.photo-nav {
   margin: 0 auto;
   max-width: 650px;
   width: 100%;
@@ -189,6 +190,14 @@ nav {
 
   .caption {
     text-align: center;
+  }
+}
+
+.photo-nav {
+  text-align: right;
+
+  @include breakpoint(medium) {
+    text-align: left;
   }
 }
 
