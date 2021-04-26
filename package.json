@@ -8,8 +8,9 @@
     "url": "https://github.com/tynandebold/tynandebold.com"
   },
   "scripts": {
-    "start": "gulp",
-    "build": "gulp build"
+    "build": "gulp build",
+    "init-node": "nvm use 11.2.0",
+    "start": "gulp"
   },
   "engines": {
     "node": "<12.0.0"
