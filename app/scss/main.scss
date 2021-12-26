@@ -5,6 +5,7 @@
   src: local('Source Code Pro Light'), local('SourceCodePro-Light'),
     url('../fonts/source-code-pro-v11-latin-300.woff2') format('woff2'),
     url('../fonts/source-code-pro-v11-latin-300.woff') format('woff');
+  font-display: swap;
 }
 @font-face {
   font-family: 'Source Code Pro';
@@ -13,6 +14,7 @@
   src: local('Source Code Pro Regular'), local('SourceCodePro-Regular'),
     url('../fonts/source-code-pro-v11-latin-regular.woff2') format('woff2'),
     url('../fonts/source-code-pro-v11-latin-regular.woff') format('woff');
+  font-display: swap;
 }
 @font-face {
   font-family: 'Source Code Pro';
@@ -21,6 +23,7 @@
   src: local('Source Code Pro SemiBold'), local('SourceCodePro-SemiBold'),
     url('../fonts/source-code-pro-v11-latin-600.woff2') format('woff2'),
     url('../fonts/source-code-pro-v11-latin-600.woff') format('woff');
+  font-display: swap;
 }
 
 @mixin breakpoint($point) {
@@ -211,6 +214,18 @@ nav {
   @include breakpoint(medium) {
     margin: 0 0 2em;
     padding-top: 0;
+  }
+}
+
+ul.about-text {
+  margin-bottom: 1em;
+  margin-left: 50%;
+  margin-top: -1em;
+  transform: translate(-50%, 0);
+
+  @include breakpoint(medium) {
+    margin-left: unset;
+    transform: none;
   }
 }
 
