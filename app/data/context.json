@@ -959,6 +959,14 @@
         {
           "title": "Eating Animals",
           "link": "https://www.amazon.com/dp/0316069884"
+        },
+        {
+          "title": "The Autobiography of Malcolm X",
+          "link": "https://www.amazon.com/dp/0345350685"
+        },
+        {
+          "title": "Cloud Atlas",
+          "link": "https://www.amazon.com/dp/0340822783"
         }
       ]
     },
@@ -1065,7 +1073,7 @@
         "Nicaragua",
         "Costa Rica",
         "Colombia",
-        "England",
+        "England*",
         "Portugal",
         "Spain*",
         "France",
@@ -1080,7 +1088,9 @@
         "Malta",
         "Romania",
         "Switzerland",
+        "Scotland",
         "Jordan",
+        "Egypt",
         "Uganda",
         "Rwanda",
         "Thailand",
