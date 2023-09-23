@@ -5,7 +5,7 @@
   {% import 'macros/nav-macro.nunjucks' as nav %}
   {{nav.active('about')}}
   <p class="about-text">
-    I'm a Principal (Jr.) Front End Engineer at <a href="https://quantumblack.com/" target="_blank" rel="noopener">QuantumBlack</a>, a McKinsey company, in London.<br/><br/> Before that, I held a number of other roles in a few different cities and countires:</p>
+    I'm a Principal (Jr.) Front End Engineer at <a href="https://www.mckinsey.com/capabilities/quantumblack/how-we-help-clients" target="_blank" rel="noopener">QuantumBlack</a>, a McKinsey company, in London.<br/><br/> Before that, I held a number of other roles in a few different cities and countires:</p>
     <ul class="about-text">
       <li>Senior Front End Developer at Isobar, Copenhagen</li>
       <li>Senior Front End Engineer at Charie Tango, Copenhagen</li>
@@ -18,8 +18,8 @@
     <p class="about-text">While at The Wall Street Journal, I won a couple of awards for my work and was part of the team that was a finalist for the 2016 Pulitzer Prize in International Reporting.<br/><br/>
     I have extensive experience in engineering and newsroom settings and I'm well versed in hands-on conceptualization, management and execution of technically-driven initiatives and editorial content.<br/><br/>
     There's more than what exists on this site, too. Find some of that on:
-    <a href="https://www.instagram.com/tynandebold/" target="_blank" rel="noopener">instagram</a>
-    |
+    {# <a href="https://www.instagram.com/tynandebold/" target="_blank" rel="noopener">instagram</a>
+    | #}
     <a href="https://github.com/tynandebold" target="_blank" rel="noopener">github</a>
     |
     <a href="https://www.linkedin.com/in/tynan-debold" target="_blank" rel="noopener">linkedin</a>

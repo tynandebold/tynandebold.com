@@ -5,6 +5,18 @@
   },
   "devItems": [
     {
+      "src": "assets/dev/kedro-viz.jpg",
+      "title": "Kedro-Viz",
+      "technologies": "JavaScript (React, Redux, D3), Python (Uvicorn, FastAPI, pandas)",
+      "link": "https://github.com/kedro-org/kedro-viz/"
+    },
+    {
+      "src": "assets/dev/kedro-org.jpg",
+      "title": "Kedro.org",
+      "technologies": "Next.js, Framer Motion, Contentful",
+      "link": "https://kedro.org/"
+    },
+    {
       "src": "assets/dev/user-stats-ct-website.png",
       "title": "User stats page, CharlieTango.dk",
       "technologies": "Google Firebase (Cloud Firestore and Functions), Next.js, TypeScript",
@@ -967,6 +979,18 @@
         {
           "title": "Cloud Atlas",
           "link": "https://www.amazon.com/dp/0340822783"
+        },
+        {
+          "title": "Less Than Zero",
+          "link": "https://www.amazon.com/dp/0679781498"
+        },
+        {
+          "title": "Robinson Crusoe",
+          "link": "https://www.amazon.com/dp/1853260452"
+        },
+        {
+          "title": "Factotum",
+          "link": "https://www.amazon.com/dp/0876852630"
         }
       ]
     },
