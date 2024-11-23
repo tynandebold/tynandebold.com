@@ -1,7 +1,6 @@
-# [tynandebold.com](https://tynandebold.com/)
+# tynandebold.com
 
-My own little corner of the web. It's a living, breathing site, containing
-professional work, personal projects, random writings, photography, and lists.
+My own little corner of the web.
 
 ### Technologies used
 
