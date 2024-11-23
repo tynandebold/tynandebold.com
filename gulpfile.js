@@ -24,7 +24,7 @@ gulp.task('default', function () {
 });
 
 gulp.task('build', function () {
-  runSeq('nunjucks', 'responsive', 'move');
+  runSeq('nunjucks', 'responsive', 'move', 'pull-copy-push');
 });
 
 // get data; run nunjucks to compile static html files
