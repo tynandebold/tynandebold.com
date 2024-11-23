@@ -4,8 +4,8 @@
 {% block content -%}
   {% import 'macros/nav-macro.nunjucks' as nav %}
   {{nav.active('various')}}
-    <div class="various-items">
-      {%- for group, content in various %}
+  <div class="various-items">
+    {%- for group, content in various %}
       <h3 class="group-title">{{content.title}}</h3>
       {%- if content.title === 'travel' %}
         <h4 class="group-desc">{{content.desc}} Count: {{content.items | length}}.</h4>
@@ -15,22 +15,24 @@
       <ul>
         {%- if content.title === 'travel' %}
           {%- for item in content.items %}
-          <li>{{item}}</li>
-        {%- endfor %}
+            <li>{{item}}</li>
+          {%- endfor %}
         {% else %}
           {%- for item in content.items %}
-          {%- if content.title === 'writings' %}
-          <li>
-            <a href={{item.link}}>{{item.title}}</a>
-          </li>
-          {% else %}
-          <li>
-            <a href={{item.link}} target="_blank" rel="noopener">{{item.title}}</a>
-          </li>
-          {%- endif %}
-        {%- endfor %}
+            {%- if content.title === 'writings' %}
+              <li>
+                <a href={{item.link}}>{{item.title}}</a>
+              </li>
+            {% elif content.title === 'books' %}
+              <li>{{item.title}}</li>
+            {% else %}
+              <li>
+                <a href={{item.link}} target="_blank" rel="noopener">{{item.title}}</a>
+              </li>
+            {%- endif %}
+          {%- endfor %}
         {%- endif %}
       </ul>
-      {% endfor -%}
-    </div>
+    {% endfor -%}
+  </div>
 {%- endblock %}

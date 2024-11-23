@@ -770,7 +770,7 @@
   "various": {
     "books": {
       "title": "books",
-      "desc": "An incomplete list of works I've read and enjoyed, in no particular order.",
+      "desc": "An incomplete list of ones I've read and enjoyed.",
       "items": [
         {
           "title": "East of Eden",
@@ -991,6 +991,27 @@
         {
           "title": "Factotum",
           "link": "https://www.amazon.com/dp/0876852630"
+        },
+        {
+          "title": "The Spy Who Came in from the Cold"
+        },
+        {
+          "title": "Sea People"
+        },
+        {
+          "title": "Death on the Nile"
+        },
+        {
+          "title": "Murder of the Orient Express"
+        },
+        {
+          "title": "Five Little Pigs"
+        },
+        {
+          "title": "And Then There Were None"
+        },
+        {
+          "title": "Imperial Bedrooms"
         }
       ]
     },
@@ -1069,10 +1090,6 @@
           "link": "https://www.gwern.net/index"
         },
         {
-          "title": "Numbers and monitoring of COVID-19 (Denmark)",
-          "link": "https://experience.arcgis.com/experience/aa41b29149f24e20a4007a0c4e13db1d"
-        },
-        {
           "title": "ongoing by Tim Bray",
           "link": "https://www.tbray.org/ongoing/"
         },
@@ -1103,7 +1120,7 @@
         "France",
         "Belgium",
         "The Netherlands",
-        "Germany",
+        "Germany*",
         "Denmark*",
         "Norway",
         "Sweden",
@@ -1113,6 +1130,8 @@
         "Romania",
         "Switzerland",
         "Scotland",
+        "Latvia",
+        "Greece",
         "Jordan",
         "Egypt",
         "Uganda",
@@ -1122,7 +1141,8 @@
         "Singapore",
         "Hong Kong*",
         "South Korea",
-        "Japan"
+        "Japan",
+        "Nepal"
       ]
     },
     "writing": {

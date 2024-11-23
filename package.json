@@ -30,11 +30,10 @@
     "gulp-marked": "^1.0.0",
     "gulp-nunjucks-render": "^2.0.0",
     "gulp-rename": "^1.4.0",
-    "gulp-responsive": "^3.0.1",
     "gulp-sass": "^4.0.2",
     "gulp-webserver": "^0.9.1",
     "gulp-wrap": "^0.15.0",
-    "lodash": "^4.17.20",
+    "lodash": "^4.17.21",
     "node-sass": "^4.14.1",
     "run-sequence": "^1.1.5"
   }

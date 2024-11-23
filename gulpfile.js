@@ -24,7 +24,7 @@ gulp.task('default', function () {
 });
 
 gulp.task('build', function () {
-  runSeq('nunjucks', 'responsive', 'move', 'pull-copy-push');
+  runSeq('nunjucks', 'responsive', 'move');
 });
 
 // get data; run nunjucks to compile static html files
@@ -96,6 +96,7 @@ gulp.task('webserver', function () {
   return gulp.src('./app/').pipe(
     webserver({
       open: true,
+      port: 7080,
       middleware: function (req, res, next) {
         // ignore these things
         if (
@@ -146,12 +147,13 @@ gulp.task('move', function () {
 });
 
 gulp.task('pull-copy-push', function () {
-  exec('mkdir ./build/feeds && node generate-rss.js && sh build.sh', function (
-    error
-  ) {
-    if (error) {
-      console.error('exec error: ', error);
-      return;
+  exec(
+    'mkdir ./build/feeds && node generate-rss.js && sh build.sh',
+    function (error) {
+      if (error) {
+        console.error('exec error: ', error);
+        return;
+      }
     }
-  });
+  );
 });
