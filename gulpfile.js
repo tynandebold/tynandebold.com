@@ -1,51 +1,40 @@
-var gulp = require('gulp');
+import gulp from 'gulp';
+import { exec } from 'child_process';
+import cleanCSS from 'gulp-clean-css';
+import gulpData from 'gulp-data';
+import { deleteAsync } from 'del';
+import frontMatter from 'gulp-front-matter';
+import fs from 'fs';
+import livereload from 'gulp-livereload';
+import marked from 'gulp-marked';
+import nunjucks from 'gulp-nunjucks-render';
+import rename from 'gulp-rename';
+import * as dartSass from 'sass';
+import gulpSass from 'gulp-sass';
+import webserver from 'gulp-webserver';
+import wrap from 'gulp-wrap';
 
-var { exec } = require('child_process');
-var cleanCSS = require('gulp-clean-css');
-var data = require('gulp-data');
-var del = require('del');
-var frontMatter = require('gulp-front-matter');
-var fs = require('fs');
-var imagemin = require('gulp-imagemin');
-var livereload = require('gulp-livereload');
-var marked = require('gulp-marked');
-var nunjucks = require('gulp-nunjucks-render');
-var rename = require('gulp-rename');
-var runSeq = require('run-sequence');
-var sass = require('gulp-sass');
-var webserver = require('gulp-webserver');
-var wrap = require('gulp-wrap');
-
-sass.compiler = require('node-sass');
-
-// specific tasks
-gulp.task('default', function () {
-  runSeq('sass', 'nunjucks', 'markdown', 'watch', 'webserver');
-});
-
-gulp.task('build', function () {
-  runSeq('nunjucks', 'responsive', 'move', 'pull-copy-push');
-});
+const sass = gulpSass(dartSass);
 
 // get data; run nunjucks to compile static html files
-gulp.task('nunjucks', function () {
+function nunjucksTask() {
   return gulp
     .src('./app/pages/**/*.nunjucks')
     .pipe(
-      data(function () {
+      gulpData(function () {
         return JSON.parse(fs.readFileSync('./app/data/context.json'));
-      })
+      }),
     )
     .pipe(
       nunjucks({
         path: ['./app/templates'],
-      })
+      }),
     )
     .pipe(gulp.dest('./app'));
-});
+}
 
-gulp.task('markdown', function () {
-  gulp
+function markdownTask() {
+  return gulp
     .src('./app/pages/**/*.md')
     .pipe(frontMatter())
     .pipe(marked())
@@ -57,42 +46,47 @@ gulp.task('markdown', function () {
             .toString();
         },
         null,
-        { engine: 'nunjucks' }
-      )
+        { engine: 'nunjucks' },
+      ),
     )
     .pipe(gulp.dest('./app'));
-});
+}
 
 // compile sass file(s)
-gulp.task('sass', function () {
+function sassTask() {
   return gulp
     .src('./app/scss/*.scss')
-    .pipe(sass().on('error', sass.logError))
+    .pipe(
+      sass({ silenceDeprecations: ['legacy-js-api'] }).on(
+        'error',
+        sass.logError,
+      ),
+    )
     .pipe(rename('main.min.css'))
     .pipe(gulp.dest('./app/css'));
-});
+}
 
 // minify css
-gulp.task('minify-css', function () {
+function minifyCssTask() {
   return gulp
     .src('./app/css/*.min.css')
     .pipe(cleanCSS())
     .pipe(gulp.dest('./app/css'));
-});
+}
 
 // watch files for changes
-gulp.task('watch', function () {
+function watchTask() {
   livereload.listen();
-  gulp.watch('./app/scss/*.scss', ['sass']);
-  gulp.watch('./app/css/*.min.css', ['minify-css']);
+  gulp.watch('./app/scss/*.scss', sassTask);
+  gulp.watch('./app/css/*.min.css', minifyCssTask);
   gulp.watch(
     ['./app/**/**/*.+(nunjucks|json|md)', './app/data/*.json'],
-    ['nunjucks', 'markdown']
+    gulp.parallel(nunjucksTask, markdownTask),
   );
-});
+}
 
 // run a local server
-gulp.task('webserver', function () {
+function webserverTask() {
   return gulp.src('./app/').pipe(
     webserver({
       open: true,
@@ -117,21 +111,20 @@ gulp.task('webserver', function () {
         req.url = url;
         next();
       },
-    })
+    }),
   );
-});
+}
 
-// image optimization
-gulp.task('responsive', function () {
-  del('./build/**/*');
+// clean build directory and copy photos
+async function cleanAndCopyPhotos() {
+  await deleteAsync('./build/**/*');
   return gulp
-    .src('./app/assets/photo/**/*.jpg')
-    .pipe(imagemin({ progressive: true }))
+    .src('./app/assets/photo/**/*.jpg', { encoding: false })
     .pipe(gulp.dest('./build/assets/photo'));
-});
+}
 
 // move necessary files to build dir
-gulp.task('move', function () {
+function moveTask() {
   return gulp
     .src(
       [
@@ -141,19 +134,37 @@ gulp.task('move', function () {
         './app/js/*.js',
         './app/fonts/*',
       ],
-      { base: 'app' }
+      { base: 'app', encoding: false },
     )
     .pipe(gulp.dest('./build'));
-});
+}
 
-gulp.task('pull-copy-push', function () {
+function pullCopyPushTask(done) {
   exec(
     'mkdir ./build/feeds && node generate-rss.js && sh build.sh',
     function (error) {
       if (error) {
         console.error('exec error: ', error);
-        return;
       }
-    }
+      done();
+    },
   );
-});
+}
+
+// default task for development
+const defaultTask = gulp.series(
+  sassTask,
+  gulp.parallel(nunjucksTask, markdownTask),
+  gulp.parallel(watchTask, webserverTask),
+);
+
+// build task for production
+const buildTask = gulp.series(
+  gulp.parallel(nunjucksTask, markdownTask),
+  cleanAndCopyPhotos,
+  moveTask,
+  pullCopyPushTask,
+);
+
+export default defaultTask;
+export { buildTask as build };

@@ -4,7 +4,7 @@ My own little corner of the web.
 
 ### Technologies used
 
-Nunjucks, Gulp, Vanilla JS, SCSS, Node (below version 12), Bash, RSS.
+Nunjucks, Gulp, Vanilla JS, SCSS, Node, Bash, RSS.
 
 ### Scripts
 

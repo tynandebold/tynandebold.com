@@ -1,24 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-81744557-1"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
+  <head>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-81744557-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag('js', new Date());
 
-    gtag('config', 'UA-81744557-1');
-  </script>
-  <meta charset="UTF-8">
-  <title>Work · Tynan DeBold</title>
-  <link rel="shortcut icon" type="image/x-icon" href="assets/dev/favicon.ico">
-  <meta name="description" content="Software engineer and award-winning multimedia and graphics editor with extensive experience in engineering and newsroom settings. Well versed in hands-on conceptualization, management and execution of technically-driven initiatives and editorial content.">
-	<meta name="keywords" content="tynan debold, tynandebold, tynan, debold, developer, interactive developer, data visualization, data viz, dataviz, front-end developer, software engineer, frontend engineer, photography, photographer, the wall street journal, wsj, msnbc, msnbc.com, nbc, media, journalism">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="css/main.min.css">
-</head>
-<body>
-  <main>
+      gtag('config', 'UA-81744557-1');
+    </script>
+    <meta charset="UTF-8">
+    <title>Work · Tynan DeBold</title>
+    <link rel="shortcut icon" type="image/x-icon" href="assets/dev/favicon.ico">
+    <meta name="description" content="Software engineer and award-winning multimedia and graphics editor with extensive experience in engineering and newsroom settings. Well versed in hands-on conceptualization, management and execution of technically-driven initiatives and editorial content.">
+    <meta name="keywords" content="tynan debold, tynandebold, tynan, debold, developer, interactive developer, data visualization, data viz, dataviz, front-end developer, software engineer, frontend engineer, photography, photographer, the wall street journal, wsj, msnbc, msnbc.com, nbc, media, journalism">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/main.min.css">
+  </head>
+  <body>
+    <main>
   <nav>
     <h1>Tynan DeBold</h1>
     <a href="/" class="active">Work</a>
@@ -485,25 +487,18 @@
   </div>
 
 
-  </main>
-  <footer>
-    <p>–<br>© Tynan DeBold <span id="year"></span></p>
-  </footer>
-  <script src="//cdnjs.cloudflare.com/ajax/libs/lazysizes/5.2.0/lazysizes.min.js"></script>
-  <script>
-    window.lazySizesConfig = window.lazySizesConfig || {};
-    window.lazySizesConfig.expand = 300;
+    </main>
+    <footer>
+      <p>–<br>© Tynan DeBold <span id="year"></span></p>
+    </footer>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/lazysizes/5.2.0/lazysizes.min.js"></script>
+    <script>
+      window.lazySizesConfig = window.lazySizesConfig || {};
+      window.lazySizesConfig.expand = 300;
 
-    document.getElementById('year').innerHTML = '2010-' + new Date().getFullYear();
-
-    document.querySelector('body').addEventListener('dblclick', function() {
-      document.querySelector('body').style.background = 'black';
-      document.querySelector('body').style.color = 'white';
-      document.querySelectorAll('a').forEach(function(item) {
-        item.style.color = '#8e8eff'
-      });
-      document.querySelector('a.active').style.color = '#c07aff';
-    });
-  </script>
-</body>
+      document
+        .getElementById('year')
+        .innerHTML = '2010-' + new Date().getFullYear();
+    </script>
+  </body>
 </html>
