@@ -5,6 +5,18 @@
   },
   "devItems": [
     {
+      "src": "assets/dev/berlin-news.jpg",
+      "title": "Berlin, in English",
+      "technologies": "TypeScript, RSS, Claude API, GitHub Actions, GitHub Pages",
+      "link": "https://tynandebold.com/berlin-news/"
+    },
+    {
+      "src": "assets/dev/holland-advisory.jpg",
+      "title": "Holland Advisory",
+      "technologies": "Astro, Tailwind CSS, MDX",
+      "link": "https://holland-advisory.com/"
+    },
+    {
       "src": "assets/dev/kedro-viz.jpg",
       "title": "Kedro-Viz",
       "technologies": "JavaScript (React, Redux, D3), Python (Uvicorn, FastAPI, pandas)",
