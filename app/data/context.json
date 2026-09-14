@@ -5,6 +5,18 @@
   },
   "devItems": [
     {
+      "src": "assets/dev/spectre-upgrade.jpg",
+      "title": "Spectre Upgrade",
+      "technologies": "Rust, Tauri, React, TypeScript, Vite",
+      "link": "https://github.com/tynandebold/spectre-upgrade"
+    },
+    {
+      "src": "assets/dev/fantastic-berlin.jpg",
+      "title": "Altitude",
+      "technologies": "TypeScript, Playwright, GitHub Actions, GitHub Pages",
+      "link": "https://tynandebold.com/fantastic-berlin/"
+    },
+    {
       "src": "assets/dev/berlin-news.jpg",
       "title": "Berlin, in English",
       "technologies": "TypeScript, RSS, Claude API, GitHub Actions, GitHub Pages",
